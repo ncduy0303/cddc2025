@@ -1,0 +1,5 @@
+Heads up, Brainhackers!
+This is a very basic case of RSA decryption.
+Can you read the message?
+
+Flag: CDDC2025{g00d_j0b_0n_5olv1ng_RSA}

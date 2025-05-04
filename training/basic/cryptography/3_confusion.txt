@@ -1,0 +1,24 @@
+After the first message from Cypher, Dex explained to us about the principles used in classic ciphers that are still used in modern ciphers.
+
+"According to Claude Shannon, two core principles in designing a secure algorithm are confusion and diffusion.
+Confusion is typically achieved using a substitution cipher.
+However, simple substitution ciphers have one major weakness."
+
+> message.txt
+Df rubcvkluqctb, rkfeogdkf qfs sdeeogdkf quz vik cukczuvdzg ke q gzrouz rdctzu dszfvdedzs jb Ryqosz Gtqffkf df tdg 1945 ryqggdedzs uzckuv "Q Pqvtzpqvdrqy Vtzkub ke Rubcvkluqctb". Vtzgz cukczuvdzg, itzf cuzgzfv, ikuw vklzvtzu vk vtiquv vtz qccydrqvdkf ke gvqvdgvdrg, qfs kvtzu pzvtksg ke rubcvqfqybgdg.
+
+Rkfeogdkf pzqfg vtqv zqrt jdfqub sdldv (jdv) ke vtz rdctzuvzhv gtkoys szczfs kf gznzuqy cquvg ke vtz wzb, kjgroudfl vtz rkffzrvdkfg jzvizzf vtz vik. Vtz cukczuvb ke rkfeogdkf tdszg vtz uzyqvdkfgtdc jzvizzf vtz rdctzuvzhv qfs vtz wzb. Vtdg cukczuvb pqwzg dv sdeedroyv vk edfs vtz wzb eukp vtz rdctzuvzhv qfs de q gdflyz jdv df q wzb dg rtqflzs, vtz rqyroyqvdkf ke pkgv ku qyy ke vtz jdvg df vtz rdctzuvzhv idyy jz qeezrvzs.
+
+Rkfeogdkf dfruzqgzg vtz qpjdlodvb ke rdctzuvzhv qfs dv dg ogzs jb jkvt jykrw qfs gvuzqp rdctzug. Df gojgvdvovdkf–czupovqvdkf fzvikuwg, rkfeogdkf dg cukndszs jb gojgvdvovdkf jkhzg.
+
+Sdeeogdkf pzqfg vtqv de iz rtqflz q gdflyz jdv ke vtz cyqdfvzhv, vtzf qjkov tqye ke vtz jdvg df vtz rdctzuvzhv gtkoys rtqflz, qfs gdpdyquyb, de iz rtqflz kfz jdv ke vtz rdctzuvzhv, vtzf qjkov tqye ke vtz cyqdfvzhv jdvg gtkoys rtqflz. Vtdg dg zmodnqyzfv vk vtz zhczrvqvdkf vtqv zfrubcvdkf grtzpzg zhtdjdv qf qnqyqfrtz zeezrv.
+
+Df gojgvdvovdkf–czupovqvdkf fzvikuwg, sdeeogdkf dg cukndszs jb czupovqvdkf jkhzg (q.w.q. czupovqvdkf yqbzu). Df vtz jzldffdfl ke vtz 21gv rzfvoub q rkfgzfgog tqs qcczquzs itzuz vtz szgdlfzug cuzezuuzs vtz czupovqvdkf yqbzu vk rkfgdgv ke ydfzqu Jkkyzqf eofrvdkfg, qyvtkolt fkfydfzqu eofrvdkfg rqf jz ogzs, vkk.
+
+Vtz eyql dg RSSR2025{euzmozfrb_qfqybgdg_qvvqrw_kf_gojgvdvovdkf_rdctzu}
+
+> Just a substitution cipher (use www.dcode.fr/monoalphabetic-substitution to decode automatically)
+
+IN CRYPTOGRAPHY, CONFUSION AND DIFFUSION ARE TWO PROPERTIES OF A SECURE CIPHER IDENTIFIED BY CLAUDE SHANNON IN HIS 1945 CLASSIFIED REPORT "A MATHEMATICAL THEORY OF CRYPTOGRAPHY". THESE PROPERTIES, WHEN PRESENT, WORK TOGETHER TO THWART THE APPLICATION OF STATISTICS, AND OTHER METHODS OF CRYPTANALYSIS. CONFUSION MEANS THAT EACH BINARY DIGIT (BIT) OF THE CIPHERTEXT SHOULD DEPEND ON SEVERAL PARTS OF THE KEY, OBSCURING THE CONNECTIONS BETWEEN THE TWO. THE PROPERTY OF CONFUSION HIDES THE RELATIONSHIP BETWEEN THE CIPHERTEXT AND THE KEY. THIS PROPERTY MAKES IT DIFFICULT TO FIND THE KEY FROM THE CIPHERTEXT AND IF A SINGLE BIT IN A KEY IS CHANGED, THE CALCULATION OF MOST OR ALL OF THE BITS IN THE CIPHERTEXT WILL BE AFFECTED. CONFUSION INCREASES THE AMBIGUITY OF CIPHERTEXT AND IT IS USED BY BOTH BLOCK AND STREAM CIPHERS. IN SUBSTITUTION-PERMUTATION NETWORKS, CONFUSION IS PROVIDED BY SUBSTITUTION BOXES. DIFFUSION MEANS THAT IF WE CHANGE A SINGLE BIT OF THE PLAINTEXT, THEN ABOUT HALF OF THE BITS IN THE CIPHERTEXT SHOULD CHANGE, AND SIMILARLY, IF WE CHANGE ONE BIT OF THE CIPHERTEXT, THEN ABOUT HALF OF THE PLAINTEXT BITS SHOULD CHANGE. THIS IS EQUIVALENT TO THE EXPECTATION THAT ENCRYPTION SCHEMES EXHIBIT AN AVALANCHE EFFECT. IN SUBSTITUTION-PERMUTATION NETWORKS, DIFFUSION IS PROVIDED BY PERMUTATION BOXES (A.K.A. PERMUTATION LAYER). IN THE BEGINNING OF THE 21ST CENTURY A CONSENSUS HAD APPEARED WHERE THE DESIGNERS PREFERRED THE PERMUTATION LAYER TO CONSIST OF LINEAR BOOLEAN FUNCTIONS, ALTHOUGH NONLINEAR FUNCTIONS CAN BE USED, TOO. THE FLAG IS CDDC2025{FREQUENCY_ANALYSIS_ATTACK_ON_SUBSTITUTION_CIPHER}
+
+Flag: CDDC2025{frequency_analysis_attack_on_substitution_cipher}

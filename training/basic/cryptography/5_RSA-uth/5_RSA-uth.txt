@@ -1,0 +1,8 @@
+Secrecy through RSA is an easy task.
+Dex lets his public key be known so that other people like Star and BH-2000 can send messages to him.
+However, he keeps his private key secret so that only he can read the messages. 
+
+What about authentication?
+Using RSA, how can people prove that the message is, undoubtedly, from Dex?
+
+Flag: CDDC2025{it5_0nly_m3_wh0_kn0w_my_priv4te_k3y_ther3fore_1ts_m3}

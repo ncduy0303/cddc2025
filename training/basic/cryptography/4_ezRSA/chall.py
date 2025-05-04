@@ -1,0 +1,25 @@
+# You can use this script as a template to solve other RSA challenges
+
+from Crypto.Util.number import *	# pip install pycryptodome
+
+p = 11761009148495337545940999396205089807793355019204841643389748701443098007636228251201607196675918854587390323421928481912561291511618554667920837883094277
+q = 9888136228081414209820676558226657144779627238665715838177426712845225636870713659693703226404260564674108420042074230352505763500068502502134647674251687
+n = p*q
+e = 65537
+phi = (p-1)*(q-1)
+d = pow(e,-1,phi)
+
+flag = b"CDDC2025{REDACTED}"
+m = bytes_to_long(flag)
+
+# Encryption
+c = pow(m,e,n)
+
+# Decryption
+# m = ?
+
+print(f"p = {p}")
+print(f"q = {q}")
+print(f"n = {n}")
+print(f"e = {e}")
+print(f"c = {c}")
