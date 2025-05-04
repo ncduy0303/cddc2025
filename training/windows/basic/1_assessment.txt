@@ -1,0 +1,107 @@
+A. Introduction to Windows OS
+
+1. What does the Windows Defender Firewall do?
+Stores all user passwords securely
+Manages Windows updates
+[x] Controls ports that allow or block network traffic
+Detects and removes malware automatically
+Speeds up the computer’s performance
+2. You are a cybersecurity researcher investigating a possible unauthorized change in a system’s hostname. Where can you quickly check this information?
+Task Manager’s Performance tab
+[x] System settings in the Control Panel
+File Explorer’s properties menu
+Internet Explorer’s About page
+Windows Firewall settings
+3. How does the Windows Registry help users manage hidden system settings?
+It provides a list of recent clipboard activity
+It scans for encrypted messages in the file system
+It automatically deletes hidden files every 24 hours
+[x] It allows access to registry settings
+It displays all system logs in real-time
+4. A hacker has attempted to disguise a malicious application as a normal background service. You suspect it is running, but it doesn’t appear in Task Manager. What should you do?
+Restart the system and hope the malicious application doesn’t reload
+Disable all running background processes to see if the issue stops
+Run a full disk defragmentation to remove the program
+[x] Check the registry, services, and installed applications
+Delete all unknown files in the Windows directory
+5. Why did Windows OS developers create the registry, as explained in the CDDC training materials?
+Prevent hard disk usage
+Make the system faster
+Expose important elements to users
+[x] Store system and application configuration settings persistently
+Store volatile data
+
+CDDC2025{w1nd0ws_**_*******}
+
+
+B. Explanation of the Windows Prompt
+
+1. What is the primary difference between a common user and an administrator in terms of system access?
+Common users have full control of the computer, while administrators have restricted access.
+Common users can access system files, while administrators cannot.
+[x] Administrators can control all applications and system files, while common users have limited access.
+Administrators are only allowed to run Microsoft Office applications, while common users can run any program.
+Common users have higher privileges than administrators.
+2. A hacker gains access to a general user account on a Windows system. What is the most effective way to limit their ability to cause damage?
+Remove user accounts entirely so only the administrator can use the computer
+Encourage users to run all programs with administrative privileges
+Allow all users to have administrator rights to prevent permission issues
+[x] Ensure that administrative actions require a password and are restricted to authorized users
+Disable all passwords for easier access management
+3. What is the primary purpose of authentication?
+To grant full system access to all users
+To encrypt user credentials for security
+[x] To verify a user's identity
+To track a user’s online activity
+To determine what actions a user can perform
+4. What happens if authentication is successful but authorization fails?
+The user must re-enter their password multiple times
+The system locks the user out permanently
+[x] The user is identified but restricted from accessing certain resources
+The system automatically grants administrator rights
+The user gains full access to all resources
+5. What is the significance of Windows OS being sensitive to user privileges?
+It improves system performance.
+It allows users to easily access all files on the computer.
+It enables efficient management of system resources.
+It enhances user experience.
+[x] It prevents accidental damage to the system.
+
+CDDC2025{*******_m3_*******}
+
+
+C. Powershell
+1. What is PowerShell primarily used for?
+Automating cloud infrastructure deployment
+Performing penetration testing and security audits
+Developing cross-platform GUI applications
+Managing Windows Registry and system processes
+[x] Task automation and configuration management
+2. Why is the registry important in digital forensics?
+It logs all user browsing history permanently
+It automatically restores deleted files
+It stores all system passwords in plain text
+It prevents unauthorized software from being installed
+[x] It can serve as crucial evidence of system changes and installed applications
+3. How can a user quickly search through log files?
+By sorting them alphabetically in File Explorer
+By deleting old logs and keeping only recent ones
+[x] By using regular expressions
+By opening them in Microsoft Word
+By renaming them based on date and time
+4. Which PowerShell command is used to retrieve information from log files?
+Read-LogFile
+Get-LogInfo
+Retrieve-EventLog
+Analyze-Log
+[x] Get-EventLog
+5. You are investigating a security incident on a Windows system. What is the best way to analyze event logs efficiently?
+[x] Use automation scripts to extract full event logs
+Restart the computer to refresh log data
+Manually check every log file one by one
+Delete old log files to free up space
+Only check recent logs and ignore older ones
+
+CDDC2025{*******_**_m1st4ke}
+
+Flag: CDDC2025{w1nd0ws_m3_m1st4ke}

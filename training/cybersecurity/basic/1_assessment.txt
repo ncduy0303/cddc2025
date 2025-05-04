@@ -1,0 +1,81 @@
+A. Intro. to Cyber Security
+1. CVE-2021-44228 is commonly known as?
+ProxyShell
+ProxyLogon
+Spring4Shell
+[x] Log4Shell
+Google Chrome Zero-Day
+2. What is the term for a vulnerability that exploits human weaknesses?
+Ransomware
+[x] Social engineering
+Zero-Day
+DDoS
+Cryptojacking
+3. An attack that occurs before a patch for the vulnerability is released is known as?
+DDoS
+Cryptojacking
+Social Engineering
+[x] Zero-Day
+Ransomware
+4. What does DDoS stand for?
+Distributed Data Overload System
+[x] Distributed Denial of Service
+Denial of Distributed Service
+Direct Denial of Service
+Data Disruption on Servers
+
+CDDC2025{reaper_*****_*******}
+
+
+B. Cyber Security Trends in 2025
+1. What does CSPM stand for?
+Cloud Software Protection Model
+[x] Cloud Security Posture Management
+Continuous Security Posture Monitoring
+Cloud Service Protection Mechanism
+Cloud Security Policy Management
+2. How much can CSPM tools reduce cloud security incidents caused by misconfigurations?
+70%
+90%
+[x] 80%
+60%
+50%
+3. What ensures data transparency in blockchain technology?
+An immutable ledger that shares changes with authorized members
+The ability to encrypt all data so only the owner can see it
+A private blockchain controlled by a central authority
+Periodic audits by third-party organizations
+A permissioned system where only selected users can access the data
+4. According to Gartner, what is one of the main causes of cloud security incidents?
+DDoS attacks
+Outdated antivirus software
+Weak password policies
+Insider threats
+Misconfiguration of cloud environments
+
+CDDC2025{******_ch4se_*******}
+
+
+C. Cyber Threats in Singapore
+1. What is the annual publication that examines Singapore's Cybersecurity situation?
+[x] Singapore Cyber Landscape
+Singapore Cybersecurity Report
+Singapore Cybersecurity 2025
+Singapore Cyber Threats Report
+Singapore Landscape of Cybersecurity
+2. To support the strategic pillar of Singapore's cybersecurity strategy in 2023, which of the following is the foundational enabler?
+[x] Growing a robust cyber talent pipeline
+Enhancing international cyber cooperation
+Protecting personally identifiable data
+Building a resilient infrastructure
+Enabling safer cyberspace
+3. What could be a potential long-term implication of AI-powered phishing attacks based on the Singapore Cyber Landscape 2023?
+AI chatbots will eventually replace human hackers
+Phishing cases will drop significantly as AI-based email filtering improves
+Governments will ban AI chatbots to reduce phishing incidents
+[x] Phishing attacks will become more sophisticated and harder to detect
+Cybercriminals will stop using phishing as security awareness increases
+
+CDDC2025{******_*****_creeper}
+
+Flag: CDDC2025{reaper_ch4se_creeper}

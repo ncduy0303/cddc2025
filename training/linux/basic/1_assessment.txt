@@ -1,0 +1,103 @@
+A. Introduction to Linux
+
+1. Which of the following best describes the relationship between Linux and Unix?
+Linux is an operating system that is based on the Unix kernel
+[x] Linux is a Unix-like operating system that follows POSIX standards but is not directly derived from Unix
+Linux and Unix are entirely unrelated operating systems
+Linux is a direct successor of Unix, inheriting its entire codebase
+Unix is a modified version of the Linux kernel
+2. Why do Linux users often need to troubleshoot issues themselves?
+The Linux community does not offer troubleshooting resources
+Linux is a proprietary operating system
+[x] Most Linux distributions and applications are non-commercial, users need to troubleshoot issues themselves
+Developers charge high fees for customer support
+Linux does not require technical support due to its stability
+3. Which of the following is the downside when using Linux?
+[x] Many Windows programs do not run on Linux
+It lacks an open-source development model
+It requires expensive licensing fees
+It does not support any graphical user interface (GUI)
+Linux systems require high-end hardware to function properly
+4. What does CLI stand for?
+[x] Command-Line Interface
+Code-Level Interaction
+Common Language Interpreter
+Centralized Linux Interface
+Computer Logic Integration
+
+CDDC2025{pers0nal_******_********}
+
+
+B. Components of Linux OS
+1. Which of the following statements about the kernel is true?
+The kernel is not essential for an operating system to function
+Kernels are not found in modern operating systems
+[x] If the kernel crashes, the OS will become unresponsive
+Kernel panics only occur due to hardware failure
+The kernel only manages software applications
+2. Which of the following is an advantage of using a Command Line Interface (CLI) over a Graphical User Interface (GUI)?
+It is easier for beginners to navigate than a GUI
+It eliminates the need for a kernel to process commands
+It requires no prior knowledge of computing
+[x] It provides stability, speed, and efficient resource utilization
+It automatically converts commands into graphical elements
+3. What is the function of the rmdir command?
+To move a file
+[x] To remove a directory
+To remove a file
+None of the given options
+To show current directory
+4. What is the function of the mv command?
+To remove a directory
+To show current directory
+[x] To move a file
+To remove a file
+None of the given options
+5. What does pwd stand for?
+Print Working Data
+Print Working Drive
+[x] Print Working Directory
+Print Wave Directory
+Print Working Database
+
+CDDC2025{********_pr0j3ct_********}
+
+
+C. Linux Permissions and File System
+
+1. In Linux file permissions, there are three types of permission categories that define access control. What are these three categories?
+Public, Private, Shared
+File, Directory, Process
+Read, Execute, Modify
+[x] User, Group, Other
+Root, Admin, Guest
+2. Why is permission control important in Linux?
+Because Linux does not support passwords
+Because Linux is an open-source system
+Because Linux does not have a kernel
+[x] Because Linux is a multi-user operating system
+Because Linux is only used for servers
+3. What command is used to display file permissions in Linux?
+mkdir
+cd
+[x] ls -l
+pwd
+chmod
+4. -rwx--x--x 5 alex researcher 4096 Nov 12 12:40 script.sh
+
+What is the permission number for this file?
+755
+600
+644
+701
+[x]711
+5. What happens when a file is deleted but still has multiple hard links?
+The file becomes inaccessible to all users
+The file is permanently removed immediately
+The I-node number changes automatically
+[x] The file remains accessible until all hard links are removed
+The system creates a backup before deletion
+
+CDDC2025{********_*******_nin3tie5}
+
+Flag: CDDC2025{pers0nal_pr0j3ct_nin3tie5}

@@ -1,0 +1,89 @@
+A. Cryptology and Cryptographic Communication
+
+1. Why is plaintext vulnerable when sent over an insecure network?
+Because plaintext cannot be sent over the internet
+Because plaintext is always converted to ciphertext automatically
+Because encryption makes communication slower
+Because attackers can only modify encrypted messages, not plaintext
+[x] Because attackers can read and steal the message without encryption
+2. Which of the following is necessary for encryption to work?
+A passive attacker like Eve
+A secure internet connection
+[x] An encryption algorithm and an encryption key
+A backup copy of the plaintext
+A third-party authentication server
+3. To ensure the message is not readable to the attacker, the message has to undergo a/an ____ process. The resulting message will not be readable and is called ____
+Decryption, plain text
+Cipher text, encryption
+Encryption, plain text
+[x] Encryption, cipher text
+Decryption, cipher text
+4. What is the main difference between a passive attacker (Eve) and an active attacker (Mallory) according to CDDC Training materials?
+Eve can decrypt messages, while Mallory cannot
+Eve is a hacker, while Mallory is a security expert
+Mallory always needs an encryption key, while Eve does not
+A passive attacker always works offline, while an active attacker works online
+[x] Mallory can alter or resend messages, while Eve can only observe communications
+
+CDDC2025{1nf0rm4t10n_*********_**********}
+
+
+B. History of Cryptography
+
+1. Why is post-quantum cryptography considered necessary in the future of cybersecurity?
+[x] Because quantum computers can break current public-key encryption algorithms like RSA and ECC
+Because quantum computers will make symmetric encryption obsolete
+Because classical computers cannot decrypt messages encrypted with post-quantum algorithms
+Because post-quantum cryptography eliminates the need for encryption keys
+Because cryptographic security is only needed in government applications
+2. What is the primary weakness of the Caesar cipher in modern cryptographic analysis?
+It is resistant to brute-force attacks
+It requires a computationally expensive decryption process
+[x] It can be easily broken using frequency analysis due to its predictable shift pattern
+It uses a key length that is too long for practical encryption
+It was only designed to encrypt numerical values
+3. Who introduced the concept of public key cryptography in 1976?
+[x] Diffie & Hellman
+Claude Shannon
+Alan Turing
+Blaise de Vigenere
+Kerchoff
+4. Why does a strong encryption algorithm require both confusion and diffusion?
+[x] To obscure both the relationship between plaintext and ciphertext and the statistical structure of the plaintext
+Because modern ciphers only use substitution (confusion) or permutation (diffusion), but not both
+Because diffusion alone ensures ciphertext randomness, making confusion unnecessary
+Because confusion and diffusion are only relevant for symmetric encryption algorithms
+Because increasing the key length compensates for the lack of confusion or diffusion
+
+CDDC2025{***********_s3cv12ity_**********}
+
+
+C. Classification of Encryption Method
+1. Bob receives a message from Alice that has been encrypted with Alice’s private key. Why is this message not confidential even though it is encrypted?
+Because encryption only works when both sender and receiver share a key
+Because asymmetric encryption does not support decryption
+[x] Because anyone with Alice’s public key can decrypt it
+Because encryption only works for data integrity, not confidentiality
+Because Bob must use his private key to decrypt it
+2. Why does a digital signature use a private key for signing instead of a public key?
+Because using a public key would prevent verification
+Because encryption and digital signatures must use different keys
+Because a private key provides confidentiality for the message
+Because private keys are stronger than public keys
+[x] To ensure that only the legitimate signer could have produced the signature
+3. What is the difference between public key cryptography and digital signature?
+Digital signature requires plain text
+[x] The difference lies in where to use the public and private keys
+They do not have any differences
+They have the same encryption method but different decryption methods
+They have different encryption methods but the same decryption method
+4. Which of the following is not an information security services that cryptography enables?
+Authentication
+Confidentiality
+[x] Availability
+Integrity
+Non-repudiation
+
+CDDC2025{***********_*********_foundation}
+
+Flag: CDDC2025{1nf0rm4t10n_s3cv12ity_foundation}

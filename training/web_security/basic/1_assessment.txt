@@ -1,0 +1,66 @@
+A. Web Service Fundamentals
+
+1. What protocol does a web server use to provide services?
+UDP
+SMTP
+TCP
+FTP
+[x] HTTP
+2. In which scenario would an HTTP request NOT include a request body?
+A DELETE request with authentication headers
+A POST request submitting a form
+[x] A GET request fetching a webpage
+A PUT request updating a resource
+A PATCH request modifying specific fields
+3. A request was made to the web server. From the network tab of the inspect element, you can see a 301 status code, followed by a 500 status code. The web shows an 'Internal Server Error' message. What can be inferred from this?
+The web has been deleted by the owner and doesn't exist anymore
+The user's internet connection is unstable, leading to an interruption when loading the client resources and the subsequent 'Internal Server Error' message
+[x] The web has been moved to another URL, after visiting the new URL the web server was unable to process the request. Hence returning the error 'Internal Server Error' message
+The web page contains outdated or incompatible frontend scripts, triggering errors in the client-side execution and resulting in the 'Internal Server Error' message
+The browser cache is causing conflicts with the server response, resulting in the error
+4. Which of the following best describes the role of NGINX as a reverse proxy?
+[x] It forwards client requests to a web server and relays responses back to the client
+It is used exclusively for load balancing and does not proxy traffic
+It encrypts all HTTP traffic automatically
+It directly processes client requests without involving a web server
+It only serves static files and does not handle dynamic content
+
+CDDC2025{c0nf1dentiality_**************}
+
+
+B. Web Security Overview
+
+1. What is the main purpose of the OWASP Top 10 project?
+[x] It provides a list of the most critical web security vulnerabilities
+It only applies to large enterprises
+It is a set of security tools
+It is a list of all known vulnerabilities
+It replaces the need for security testing
+2. Why should authentication never be processed on the client side?
+It prevents brute-force attacks
+It makes the application slower
+It improves user experience by reducing login steps
+[x] Client-side authentication can be easily manipulated and bypassed
+It requires more server resources
+3. What is the difference between Local File Inclusion (LFI) and Path Traversal?
+LFI only affects Linux, while Path Traversal only affects Windows
+Path Traversal is a client-side vulnerability
+Path Traversal can only access files in the root directory
+[x] LFI allows including files on the server, while Path Traversal allows accessing files outside the intended directory
+LFI requires authentication, while Path Traversal does not
+4. How can an attacker use a web shell after exploiting a File Upload vulnerability?
+By bypassing the Content Security Policy (CSP)
+By sending phishing emails from the server
+[x] By executing OS commands on the server through the uploaded file
+By injecting SQL commands into the database
+By modifying the HTML structure of the website
+5. What is the purpose of using the payload '..%2f' in path traverse bypass techniques?
+Representing the parent directory
+[x] Hexadecimal expression of ASCII code to represent forward slash
+Payload for File Upload vulnerability
+Method for encoding backslashes
+Technique for encoding SQL injection
+
+CDDC2025{***************_authent1cation}
+
+Flag: CDDC2025{c0nf1dentiality_authent1cation}

@@ -1,0 +1,95 @@
+A. Basics of Networking
+
+1. In the analogy of Alice sending a letter to Bob, what does Bob’s address represent in a network?
+A password
+A delivery route
+A network switch
+A mailbox
+[x] An IP address
+2. What is the main purpose of an IP address in a network?
+It stores user login credentials
+[x] It identifies devices on the internet
+It encrypts all data sent over the internet
+It limits network access based on location
+It increases internet speed
+3. What is the valid range of values for each octet in an IPv4 address?
+0 to 100
+[x] 0 to 255
+0 to 1024
+1 to 500
+256 to 1024
+4. What is the primary difference between an IP address and a MAC address?
+It encrypts communication between devices
+Both are assigned dynamically by the network administrator
+[x] An IP address is a logical address, while a MAC address is a physical address
+A MAC address can be changed, but an IP address cannot
+A MAC address is used only for internet communication
+5. Which of the following is the correct order of the OSI Layer from the highest layer to the lowest layer?
+Application Layer > Transport Layer > Datalink Layer > Presentation Layer > Session Layer > Network Layer > Physical Layer
+[x] Application Layer > Presentation Layer > Session Layer > Transport Layer > Network Layer > Datalink Layer > Physical Layer
+Application Layer > Session Layer > Presentation Layer > Transport Layer > Datalink Layer > Network Layer > Physical Layer
+Application Layer > Presentation Layer > Transport Layer > Session Layer > Datalink Layer > Network Layer > Physical Layer
+Application Layer > Transport Layer > Presentation Layer > Datalink Layer > Session Layer > Network Layer > Physical Layer
+
+CDDC2025{w1r3d_*******_********}
+
+
+B. TCP/UDP Protocol
+1. Why is UDP considered faster than TCP?
+It uses a three-way handshake
+It uses larger packet sizes
+[x] It does not establish a connection before sending data
+It encrypts data more efficiently
+It sends multiple copies of the same packet
+2. Which transport protocol is ideal for reliable file transfer?
+HTTP
+[x] TCP
+FTP
+UDP
+HTTPS
+3. What is the purpose of the 4-way handshake in TCP communication?
+To speed up data transfer
+[x] To properly terminate a TCP connection
+To check for lost packets and retransmit them
+To encrypt data before transmission
+To establish a new TCP connection
+4. Which transport protocol is ideal for video conferences (Zoom, Google Meet, etc)?
+HTTPS
+HTTP
+TCP
+FTP
+[x] UDP
+
+CDDC2025{*****_0pt1c4l_********}
+
+
+C. Well-known Network Services
+
+1. What does ARP stand for?
+[x] Address Resolution Protocol
+Advanced Routing Protocol
+Application Response Protocol
+Automatic Resource Provisioning
+Application Resolution Protocol
+2. What is the primary purpose of the ARP protocol?
+[x] To map an IP address to a MAC address
+To route packets between different networks
+To encrypt network communication
+To assign IP addresses dynamically
+To prevent unauthorized network access
+3. What is the role of the DNS resolver in a DNS query?
+[x] It recursively queries DNS servers to find the IP address of a domain
+It assigns IP addresses to domain names
+It stores all domain name records permanently
+It is responsible for encrypting web traffic
+It redirects web requests to different servers
+4. Which security issue arises due to the lack of authentication in the ARP protocol
+Directory Traversal
+SQL injection attacks
+Buffer overflow attacks
+[x] Man-in-the-middle attacks
+DNS Poisoning
+
+CDDC2025{*****_*******_w1r3l355}
+
+Flag: CDDC2025{w1r3d_0pt1c4l_w1r3l355}

@@ -1,0 +1,96 @@
+A. Overview
+
+1. What does CWE stand for?
+Confidential Weakness Engagement
+Central Weakness Enumeration
+Continental Wrestling Entertainment
+[x] Common Weakness Enumeration
+Canadian Wrestling Elite
+2. Which statement about hardware vulnerabilities is MOST accurate?
+[x] They can arise from design flaws, manufacturing defects, or insecure configurations
+They can be prevented by installing a firewall
+They are only a concern for enterprise environments
+They only apply to proprietary hardware, not open-source designs
+They are always fixed through software updates
+3. Why are hardware vulnerabilities particularly concerning in critical infrastructure?
+Because software patches are always ineffective in mitigating hardware security issues
+Because attackers cannot exploit software vulnerabilities if hardware is secure
+Because hardware vulnerabilities only affect legacy systems and not modern devices
+[x] Because they can be difficult to patch and may have severe real-world consequences
+Because physical access is always required to exploit hardware vulnerabilities
+
+CDDC2025{rowhammer_******_***_****}
+
+
+B. Protecting the Hardware
+
+1. Which of the following is an example of a firmware-related security risk?
+Attackers planting malicious software on preinstalled applications
+[x] Unauthorized modifications to firmware that introduce security flaws
+Firewalls failing to block unauthorized firmware updates
+Running outdated antivirus software
+Employees using weak passwords for system login
+2. What is a key security concern related to attacker-controlled operating systems?
+[x] They allow attackers to bypass security controls and access protected data
+They prevent unauthorized users from booting the system
+They require specialized hardware to be exploited
+They make software patches more effective
+They only affect legacy systems, not modern ones
+3. Which of the following is the definition of Improper Access Control?
+Involves vulnerabilities introduced by physical access to hardware components, such as bypassing physical security measures or modifying hardware circuits
+Occurs when a hardware device is shipped with default settings or configurations that are insecure and easily exploitable
+Program or system which tries to store more data in a buffer, which leads to memory corruption
+Exploitation of information leaked through physical characteristics such as power consumption, timing, or electromagnetic emissions
+[x] Insufficient restrictions on who can access or modify resources, leading to unauthorized access or privilege escalation
+
+CDDC2025{*********_memory_***_****}
+
+
+C. Case Study
+
+1. Which of the following is a key characteristic of the Stuxnet worm?
+It was a ransomware attack that locked users out of their systems
+[x] It exploited multiple zero-day vulnerabilities to spread and infect systems
+It primarily targeted social media accounts for phishing attacks
+It was primarily used to steal personal data for financial fraud
+It was used to manipulate financial transactions in major banks
+2. Which type of malware was used in the Target data breach?
+Emotet
+[x] BlackPOS (Kaptoxa)
+TrickBot
+WannaCry
+Stuxnet
+3. Which of the following best describes the SolarWinds attack?
+[x] A supply chain attack that compromised SolarWinds’ Orion software
+An insider threat exposing confidential corporate emails
+A brute-force attack on cloud storage services
+A phishing attack targeting government employees
+A ransomware attack on IT infrastructure providers
+
+CDDC2025{*********_******_bit_****}
+
+
+D. Hacking ONVIF CCTV Vulnerability
+
+1. Which of the following tools can be used to detect ONVIF CCTV devices on a network?
+Aircrack-ng
+Wireshark
+Metasploit
+[x] Nmap
+John the Ripper
+2. What is the significance of port 554 in the context of ONVIF CCTV systems?
+It is a commonly used port for SSH remote access
+It is the main port for ONVIF device authentication
+[x] It is the primary port used for real-time streaming using the RTSP protocol
+It is the default port for HTTP web services
+It is used for encrypted communication between cameras and servers
+3. What does ONVIF stand for?
+Open Network Visual Integration Format
+Open Network Video Integration Forum
+[x] Open Network Video Interface Forum
+Optical Network Video Interconnection Framework
+Open Network Video Interference Format
+
+CDDC2025{*********_******_***_flip}
+
+Flag: CDDC2025{rowhammer_memory_bit_flip}
