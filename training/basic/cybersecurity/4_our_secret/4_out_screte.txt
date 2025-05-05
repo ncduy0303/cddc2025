@@ -1,0 +1,7 @@
+Check the image and...
+
+Kapow!!!
+
+> Just upload the image to aperisolve.com
+
+Flag: CDDC2025{Kap00vv_congratulations}

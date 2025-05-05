@@ -1,0 +1,8 @@
+What is this?!?!
+A random number?
+Why is it only 1 and 0? How do I read this?
+
+> Convert each binary number to characters using the ASCII table.
+> The flag is hidden in the converted text.
+
+Flag: CDDC2025{hidden_in_binary}

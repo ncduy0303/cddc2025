@@ -1,0 +1,9 @@
+I found something!
+Bit strange, a zip file huh..
+
+Brainhacker, please help me, I will share some dimes :)
+
+> Use John the Ripper to crack the password of the zip file.
+> Password: 12345678
+
+Flag: CDDC2025{cr4ck3d_m3_fast}

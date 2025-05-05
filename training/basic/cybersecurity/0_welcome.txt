@@ -1,0 +1,9 @@
+Welcome to the Cyber Defenders Discovery Camp 2025!
+This is the platform to exercise and learn hacking through various challenges.
+To solve this challenge, submit the flag below.
+Let's beat Cypher!
+
+Here is a flag for you, enjoy!
+CDDC2025{vvelc0m3_bra1nh4cker5!}
+
+Flag: CDDC2025{vvelc0m3_bra1nh4cker5!}

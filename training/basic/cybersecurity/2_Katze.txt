@@ -1,0 +1,13 @@
+Attention please!
+Calling all brainhackers to communicate with below port now!
+
+52.76.13.43 8085
+
+❯ nc 52.76.13.43 8085
+Welcome defender! You're on the right path to get the flag, answer questions first!
+Which port does SSH use? (No spaces, lowercase): 22
+Which port does SMTP use? (No spaces, lowercase): 25
+Which port does HTTPS use? (No spaces, lowercase): 443
+Correct! Here is your flag: CDDC2025{netcat_challenge_success}
+
+Flag: CDDC2025{netcat_challenge_success}

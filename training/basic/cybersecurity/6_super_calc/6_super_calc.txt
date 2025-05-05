@@ -1,0 +1,13 @@
+You need a super calculator to solve this! 
+
+nc 52.76.13.43 8084
+
+❯ nc 52.76.13.43 8084
+What is
+9 * 2 = 18
+6 * 7 = 42
+...
+
+> Just use pwntools to solve arithmetic problems automatically.
+
+Flag: CDDC2025{5uP3r_p0W3r3d_c4lCuL4t0r}
