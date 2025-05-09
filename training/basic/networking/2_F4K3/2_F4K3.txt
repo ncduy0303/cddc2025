@@ -1,0 +1,27 @@
+http://52.76.13.43:8149/
+
+Challenge: FAKE
+Cheating the other person's common sense and eyes is also part of security. Don't believe what you see as it is.
+
+> Download the `fake_capture.pcapng` file from the link above and analyze it using Wireshark.
+> Use the filter `frame matches "cddc"` to find the relevant packets.
+Frame 2305: 461 bytes on wire (3688 bits), 461 bytes captured (3688 bits) on interface eth0, id 0
+Ethernet II, Src: VMware_32:4d:5b (00:0c:29:32:4d:5b), Dst: VMware_eb:59:b2 (00:50:56:eb:59:b2)
+Internet Protocol Version 4, Src: 192.168.64.149 (192.168.64.149), Dst: testphp.vulnweb.com (44.228.249.3)
+Transmission Control Protocol, Src Port: 37414 (37414), Dst Port: http (80), Seq: 1998, Ack: 13572, Len: 407
+Hypertext Transfer Protocol
+    GET /CDDC2025%7BSometimes_what_you_see_may_not_be_all_that_you_see%7D.png HTTP/1.1\r\n
+    Host: testphp.vulnweb.com\r\n
+    User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0\r\n
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\n
+    Accept-Language: en-US,en;q=0.5\r\n
+    Accept-Encoding: gzip, deflate\r\n
+    Connection: keep-alive\r\n
+    Upgrade-Insecure-Requests: 1\r\n
+    Priority: u=0, i\r\n
+    \r\n
+    [Response in frame: 2307]
+    [Full request URI: http://testphp.vulnweb.com/CDDC2025%7BSometimes_what_you_see_may_not_be_all_that_you_see%7D.png]
+
+
+Flag: CDDC2025{Sometimes_what_you_see_may_not_be_all_that_you_see}

@@ -1,0 +1,9 @@
+http://52.76.13.43:8130/
+
+Challenge: ICMP
+ICMP is such a great protocol
+
+> Download the `ping_capture.pcapng` file from the link above and analyze it using Wireshark.
+> tshark -r ping_capture.pcapng -Y "icmp && ip.src == 192.168.64.149" -T fields -e data | xxd -r -p
+
+Flag: CDDC2025{I_Love_ICMP}

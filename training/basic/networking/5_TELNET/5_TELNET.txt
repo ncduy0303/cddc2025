@@ -1,0 +1,96 @@
+http://52.76.13.43:8131/
+
+Challenge: telnet
+Telnet is very, very, very vulnerable
+
+> Download the `telnet_capture.pcapng` file from the link above and analyze it using Wireshark.
+> Just follow the TCP stream and you will find the flag
+help
+
+GNU bash, version 5.2.37(1)-release (x86_64-pc-linux-gnu)
+These shell commands are defined internally.  Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.
+
+A star (*) next to a name means that the command is disabled.
+
+ job_spec [&]                          history [-c] [-d offset] [n] or hi>
+ (( expression ))                      if COMMANDS; then COMMANDS; [ elif>
+ . filename [arguments]                jobs [-lnprs] [jobspec ...] or job>
+ :                                     kill [-s sigspec | -n signum | -si>
+ [ arg... ]                            let arg [arg ...]
+ [[ expression ]]                      local [option] name[=value] ...
+ alias [-p] [name[=value] ... ]        logout [n]
+ bg [job_spec ...]                     mapfile [-d delim] [-n count] [-O >
+ bind [-lpsvPSVX] [-m keymap] [-f fi>  popd [-n] [+N | -N]
+ break [n]                             printf [-v var] format [arguments]
+ builtin [shell-builtin [arg ...]]     pushd [-n] [+N | -N | dir]
+ caller [expr]                         pwd [-LP]
+ case WORD in [PATTERN [| PATTERN]..>  read [-ers] [-a array] [-d delim] >
+ cd [-L|[-P [-e]] [-@]] [dir]          readarray [-d delim] [-n count] [->
+ command [-pVv] command [arg ...]      readonly [-aAf] [name[=value] ...]>
+ compgen [-abcdefgjksuv] [-o option]>  return [n]
+ complete [-abcdefgjksuv] [-pr] [-DE>  select NAME [in WORDS ... ;] do CO>
+ compopt [-o|+o option] [-DEI] [name>  set [-abefhkmnptuvxBCEHPT] [-o opt>
+ continue [n]                          shift [n]
+ coproc [NAME] command [redirections>  shopt [-pqsu] [-o] [optname ...]
+ declare [-aAfFgiIlnrtux] [name[=val>  source filename [arguments]
+ dirs [-clpv] [+N] [-N]                suspend [-f]
+ disown [-h] [-ar] [jobspec ... | pi>  test [expr]
+ echo [-neE] [arg ...]                 time [-p] pipeline
+ enable [-a] [-dnps] [-f filename] [>  times
+ eval [arg ...]                        trap [-lp] [[arg] signal_spec ...]
+ exec [-cl] [-a name] [command [argu>  true
+ exit [n]                              type [-afptP] name [name ...]
+ export [-fn] [name[=value] ...] or >  typeset [-aAfFgiIlnrtux] name[=val>
+ false                                 ulimit [-SHabcdefiklmnpqrstuvxPRT]>
+ fc [-e ename] [-lnr] [first] [last]>  umask [-p] [-S] [mode]
+ fg [job_spec]                         unalias [-a] name [name ...]
+ for NAME [in WORDS ... ] ; do COMMA>  unset [-f] [-v] [-n] [name ...]
+ for (( exp1; exp2; exp3 )); do COMM>  until COMMANDS; do COMMANDS-2; do>
+ function name { COMMANDS ; } or nam>  variables - Names and meanings of >
+ getopts optstring name [arg ...]      wait [-fn] [-p var] [id ...]
+ hash [-lr] [-p pathname] [-dt] [nam>  while COMMANDS; do COMMANDS-2; do>
+ help [-dms] [pattern ...]             { COMMANDS ; }
+
+ping -c 4 8.8.8.8
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=128 time=37.5 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=128 time=37.7 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=128 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=128 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3014ms
+rtt min/avg/max/mdev = 37.193/37.386/37.697/0.209 ms
+
+cat flag.txt
+
+CDDC2025{Use_SSH_Instead_Of_Telnet}
+
+ifconfig
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.64.149  netmask 255.255.255.0  broadcast 192.168.64.255
+        inet6 fe80::62e8:2d60:418a:85cd  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:32:4d:5b  txqueuelen 1000  (Ethernet)
+        RX packets 15107  bytes 13821324 (13.1 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 7579  bytes 762615 (744.7 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 90  bytes 8345 (8.1 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 90  bytes 8345 (8.1 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+exit
+
+Flag: CDDC2025{Use_SSH_Instead_Of_Telnet}
