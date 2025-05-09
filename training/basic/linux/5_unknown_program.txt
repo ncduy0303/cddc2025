@@ -1,0 +1,71 @@
+The desktop from Cypher's lookout has an unknown software installed.
+Default password of it seems to be exposed.
+Can you find it?
+
+nc 52.76.13.43 8089
+
+> cat /opt/unknown/identify_flag.sh
+#!/bin/bash
+
+shopt -s nullglob
+for file in /var/identify/*.sh; do
+    if [[ -x "$file" ]]; then
+        result=$(bash "$file")
+    else
+        result="Permission denied (not executable)"
+    fi
+    echo -e "$file executed:\n$result" >> ./log.log
+done
+> cat /var/identify/makeuser.sh
+#!/bin/bash
+
+default_passwd_file="/var/identify_file/userlist/Default_passwd.txt"
+user_list_file="/var/identify_file/userlist/user.txt"
+readme_file="/var/identify_file/Readme.md"
+
+if [[ ! -f "$default_passwd_file" ]]; then
+    echo "Error: Default_passwd.txt not found!" >&2
+    exit 1
+fi
+default_password=$(cat "$default_passwd_file")
+
+if [[ ! -f "$user_list_file" ]]; then
+    echo "Error: user.txt not found!" >&2
+    exit 1
+fi
+
+while IFS= read -r user; do
+    [[ -z "$user" ]] && continue  
+
+    if id "$user" &>/dev/null; then
+        echo "User $user already exists, skipping..."
+    else
+        sudo useradd -m "$user"
+        echo "$user:$default_password" | sudo chpasswd
+        echo "User $user created with default password."
+    fi
+    user_home="/home/$user"
+    if [[ ! -d "$user_home" ]]; then
+        sudo mkdir -p "$user_home"
+        sudo chown "$user:$user" "$user_home"
+    fi
+
+    bashrc_file="$user_home/.bashrc_profile"
+    if [[ ! -f "$bashrc_file" ]]; then
+        sudo touch "$bashrc_file"
+        sudo chown "$user:$user" "$bashrc_file"
+    fi
+
+    echo "cat \"$readme_file\"" | sudo tee -a "$bashrc_file" > /dev/null
+done < "$user_list_file"
+> cat /var/identify_file/Readme.md
+Welcome to the Ubuntu system.
+The currently assigned password is likely the default password!
+Default password: CDDC2025{W0w_Y0U_F0UnD_1T!}
+
+If you are logging in for the first time, make sure to change the default password!
+Any consequences resulting from failing to change the password will be the responsibility of the user.
+
+Enjoy using Ubuntu :)
+
+Flag: CDDC2025{W0w_Y0U_F0UnD_1T!}

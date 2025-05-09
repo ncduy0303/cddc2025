@@ -1,0 +1,13 @@
+Find the hidden flag fragment and complete the flag!
+
+nc 52.76.13.43 8086
+
+> ls -l  
+total 8
+-r--r--r-- 1 ctfuser ctfuser 16 Apr  2 02:01 flag_1.txt
+-r--r--r-- 1 ctfuser ctfuser 21 Apr  3 01:21 flag_2.txt
+lrwxrwxrwx 1 root    root    28 Apr  3 01:21 flag_3.txt -> /opt/flag_storage/flag_3.txt
+> cat /opt/flag_storage/.flag_3.txt flag_2.txt flag_1.txt | tr -d '\n' | rev
+Congratulation!flag is CDDC2025{1t_W45_ju5t_h1dd3n}
+
+Flag: CDDC2025{1t_W45_ju5t_h1dd3n}

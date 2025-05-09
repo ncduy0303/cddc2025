@@ -1,0 +1,8 @@
+Look for the flags through the executable!
+
+nc 52.76.13.43 8087
+
+> strings fruits | grep CDDC2025
+CDDC2025{this_is_Random_fruits}
+
+Flag: CDDC2025{this_is_Random_fruits}

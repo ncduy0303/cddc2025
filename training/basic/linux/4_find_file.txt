@@ -1,0 +1,113 @@
+We found a desktop left in one of Cypher's lookouts.
+On the desktop, there are flag-related files in the 'flag' folder.
+One of the files have a different file type.
+Can you find what it is?
+
+nc 52.76.13.43 8088
+
+Type the name of the file without the file extension.
+e.g.) flagflag.txt → CDDC2025{flagflag}
+
+> file flag*/*
+flag1/Y0u_F1nd_Me1.txt:     ASCII text
+flag10/Y0u_F1nd_Me10.txt:   ASCII text
+flag100/Y0u_F1nd_Me100.txt: ASCII text
+flag11/Y0u_F1nd_Me11.txt:   ASCII text
+flag12/Y0u_F1nd_Me12.txt:   ASCII text
+flag13/Y0u_F1nd_Me13.txt:   ASCII text
+flag14/Y0u_F1nd_Me14.txt:   ASCII text
+flag15/Y0u_F1nd_Me15.txt:   ASCII text
+flag16/Y0u_F1nd_Me16.txt:   ASCII text
+flag17/Y0u_F1nd_Me17.txt:   ASCII text
+flag18/Y0u_F1nd_Me18.txt:   ASCII text
+flag19/Y0u_F1nd_Me19.txt:   ASCII text
+flag2/Y0u_F1nd_Me2.txt:     ASCII text
+flag20/Y0u_F1nd_Me20.txt:   ASCII text
+flag21/Y0u_F1nd_Me21.txt:   ASCII text
+flag22/Y0u_F1nd_Me22.txt:   ASCII text
+flag23/Y0u_F1nd_Me23.txt:   ASCII text
+flag24/Y0u_F1nd_Me24.txt:   ASCII text
+flag25/Y0u_F1nd_Me25.txt:   ASCII text
+flag26/Y0u_F1nd_Me26.txt:   ASCII text
+flag27/Y0u_F1nd_Me27.txt:   ASCII text
+flag28/Y0u_F1nd_Me28.txt:   ASCII text
+flag29/Y0u_F1nd_Me29.txt:   ASCII text
+flag3/Y0u_F1nd_Me3.txt:     ASCII text
+flag30/Y0u_F1nd_Me30.txt:   ASCII text
+flag31/Y0u_F1nd_Me31.txt:   ASCII text
+flag32/Y0u_F1nd_Me32.txt:   ASCII text
+flag33/Y0u_F1nd_Me33.txt:   ASCII text
+flag34/Y0u_F1nd_Me34.txt:   ASCII text
+flag35/Y0u_F1nd_Me35.txt:   ASCII text
+flag36/Y0u_F1nd_Me36.txt:   ASCII text
+flag37/Y0u_F1nd_Me37.txt:   ASCII text
+flag38/Y0u_F1nd_Me38.txt:   ASCII text
+flag39/Y0u_F1nd_Me39.txt:   ASCII text
+flag4/Y0u_F1nd_Me4.txt:     ASCII text
+flag40/Y0u_F1nd_Me40.txt:   ASCII text
+flag41/Y0u_F1nd_Me41.txt:   ASCII text
+flag42/Y0u_F1nd_Me42.txt:   ASCII text
+flag43/Y0u_F1nd_Me43.txt:   ASCII text
+flag44/Y0u_F1nd_Me44.txt:   ASCII text
+flag45/Y0u_F1nd_Me45.txt:   ASCII text
+flag46/Y0u_F1nd_Me46.txt:   ASCII text
+flag47/Y0u_F1nd_Me47.txt:   ASCII text
+flag48/Y0u_F1nd_Me48.txt:   ASCII text
+flag49/Y0u_F1nd_Me49.txt:   ASCII text
+flag5/Y0u_F1nd_Me5.txt:     ASCII text
+flag50/Y0u_F1nd_Me50.txt:   ASCII text
+flag51/Y0u_F1nd_Me51.txt:   ASCII text
+flag52/Y0u_F1nd_Me52.txt:   ASCII text
+flag53/Y0u_F1nd_Me53.txt:   ASCII text
+flag54/Y0u_F1nd_Me54.txt:   ASCII text
+flag55/Y0u_F1nd_Me55.txt:   ASCII text
+flag56/Y0u_F1nd_Me56.txt:   data
+flag57/Y0u_F1nd_Me57.txt:   ASCII text
+flag58/Y0u_F1nd_Me58.txt:   ASCII text
+flag59/Y0u_F1nd_Me59.txt:   ASCII text
+flag6/Y0u_F1nd_Me6.txt:     ASCII text
+flag60/Y0u_F1nd_Me60.txt:   ASCII text
+flag61/Y0u_F1nd_Me61.txt:   ASCII text
+flag62/Y0u_F1nd_Me62.txt:   ASCII text
+flag63/Y0u_F1nd_Me63.txt:   ASCII text
+flag64/Y0u_F1nd_Me64.txt:   ASCII text
+flag65/Y0u_F1nd_Me65.txt:   ASCII text
+flag66/Y0u_F1nd_Me66.txt:   ASCII text
+flag67/Y0u_F1nd_Me67.txt:   ASCII text
+flag68/Y0u_F1nd_Me68.txt:   ASCII text
+flag69/Y0u_F1nd_Me69.txt:   ASCII text
+flag7/Y0u_F1nd_Me7.txt:     ASCII text
+flag70/Y0u_F1nd_Me70.txt:   ASCII text
+flag71/Y0u_F1nd_Me71.txt:   ASCII text
+flag72/Y0u_F1nd_Me72.txt:   ASCII text
+flag73/Y0u_F1nd_Me73.txt:   ASCII text
+flag74/Y0u_F1nd_Me74.txt:   ASCII text
+flag75/Y0u_F1nd_Me75.txt:   ASCII text
+flag76/Y0u_F1nd_Me76.txt:   ASCII text
+flag77/Y0u_F1nd_Me77.txt:   ASCII text
+flag78/Y0u_F1nd_Me78.txt:   ASCII text
+flag79/Y0u_F1nd_Me79.txt:   ASCII text
+flag8/Y0u_F1nd_Me8.txt:     ASCII text
+flag80/Y0u_F1nd_Me80.txt:   ASCII text
+flag81/Y0u_F1nd_Me81.txt:   ASCII text
+flag82/Y0u_F1nd_Me82.txt:   ASCII text
+flag83/Y0u_F1nd_Me83.txt:   ASCII text
+flag84/Y0u_F1nd_Me84.txt:   ASCII text
+flag85/Y0u_F1nd_Me85.txt:   ASCII text
+flag86/Y0u_F1nd_Me86.txt:   ASCII text
+flag87/Y0u_F1nd_Me87.txt:   ASCII text
+flag88/Y0u_F1nd_Me88.txt:   ASCII text
+flag89/Y0u_F1nd_Me89.txt:   ASCII text
+flag9/Y0u_F1nd_Me9.txt:     ASCII text
+flag90/Y0u_F1nd_Me90.txt:   ASCII text
+flag91/Y0u_F1nd_Me91.txt:   ASCII text
+flag92/Y0u_F1nd_Me92.txt:   ASCII text
+flag93/Y0u_F1nd_Me93.txt:   ASCII text
+flag94/Y0u_F1nd_Me94.txt:   ASCII text
+flag95/Y0u_F1nd_Me95.txt:   ASCII text
+flag96/Y0u_F1nd_Me96.txt:   ASCII text
+flag97/Y0u_F1nd_Me97.txt:   ASCII text
+flag98/Y0u_F1nd_Me98.txt:   ASCII text
+flag99/Y0u_F1nd_Me99.txt:   ASCII text
+
+Flag: CDDC2025{Y0u_F1nd_Me56}
