@@ -1,0 +1,222 @@
+A. Intro. to Cyber Crime
+
+1. Cybercrime is a crime that involves...
+A database and a web server
+[x] A computer and a network
+A firewall and an intrusion detection system
+A router and a switch
+A mobile device and an application
+2. Which of these are NOT examples of cybercrime?
+Distributed denial-of-service (DDoS) attacks
+Phishing attacks
+Identity theft
+Ransomware attacks
+[x] Accessing the dark web
+3. Stuxnet is a malicious computer worm first uncovered in 2010. What is one of the most significant harms it caused?
+[x] Damages to Iran's nuclear facilities
+Theft of classified military documents
+Financial losses in global stock markets
+Widespread internet outages
+Disruption of airline navigation systems
+
+CDDC2025{th0rou9h_*********_*********_********_**********_****_******_********}
+
+
+B. Definition of Cyber Forensic
+
+1. "The collection of volatile evidence is determined by prompt action, so the whole process must proceed without delay" is emphasized by which principle of digital forensics?
+[x] Promptitude
+Procedural continuity
+Integrity
+Righteousness
+Reappearance
+2. "Data abstraction and categorization" is done during which phase of the digital forensics process?
+Acquire the Evidence
+Report/Testimony
+Delivery/Confirm
+[x] Research/Analysis
+Investigation Preparation
+3. Why is it essential to perform analysis on a copy of a hard disk instead of the original hard disk?
+To reduce storage space usage
+To allow multiple analysts to work on the same evidence at once
+[x] To prevent corrupting the data on the original hard disk
+To make modifications easier during the investigation
+To increase the speed of analysis
+4. Upon arriving at the scene, the criminal's PC is still turned on. Why might unplugging the power cord be preferable to shutting it down to preserve its data?
+Unplugging prevents the hard drive from encrypting itself
+Shutting down can cause hardware failure
+[x] Shutting down the PC will remove volatile data in the memory
+Shutting down will make deleted files unrecoverable
+Unplugging ensures the system remains in a usable state
+5. Which one of these commands will get you the BIOS time in Linux?
+sudo systemsetup -gettime
+[x] timedatectl status
+systeminfo | find /i "BIOS"
+wmic path Win32_UTCTime get *
+wmic bios get smbiosbiosversion, releasedate
+
+CDDC2025{********_pr0cedur3_*********_********_**********_****_******_********}
+
+
+C. Cyber Law and File System
+
+1. According to Singapore's cybersecurity law, "Intercepts or causes to be intercepted without authority, directly or indirectly, any function of a computer by means of an electro-magnetic or other device" falls into the category of?
+Information Disclosure
+[x] Interception Service
+Access with Intent to Commit
+Unauthorised Access
+Unauthorised Disclosure of Access Code
+2. If FAT12 supports up to 4,096 clusters, what is the theoretical maximum number of clusters supported by FAT32?
+4,194,304
+32,768
+16,384
+[x] 268,435,456
+131,072
+3. How does NTFS differ from FAT?
+FAT is designed for high-security environments, while NTFS is not
+NTFS is only compatible with older operating systems, while FAT is for modern systems
+[x] NTFS supports file permissions and security, while FAT does not
+FAT supports file compression, while NTFS does not
+NTFS uses a simpler structure, while FAT is more complex
+
+CDDC2025{********_*********_inv0lv1ng_********_**********_****_******_********}
+
+
+D. Image Forensic
+
+1. What differs BMP from other formats such as JPG and PNG?
+BMP is optimized for web usage, while JPG and PNG are not
+[x] BMP directly maps color values of each pixel to the image without compression
+BMP supports transparent backgrounds, while JPG and PNG do not
+BMP uses advanced lossless compression, unlike JPG and PNG
+BMP is a vector-based format, while JPG and PNG are raster-based
+2. What is steganography?
+[x] The practice of concealing information within other non-secret data
+A cryptographic hashing function used for data integrity
+A method of compressing files to reduce their size
+The process of encrypting messages using public and private keys
+A technique for detecting unauthorized access to a system
+3. What is the PNG file signature in hex?
+25504446
+[x] 89504e470d0a1a0a
+4f676753
+424d
+ffd8ffe00010
+4. What is the CRC32 value of the string "I Love Forensics"? [Hint: use online tool]
+9a6c932e
+1c291ca3
+[x] 68c24084
+d87f7e0c
+5d41402a
+
+CDDC2025{********_*********_*********_3vid3nce_**********_****_******_********}
+
+
+E. Document Forensic
+
+1. What can macro NOT do?
+Download and execute a malicious payload
+[x] Directly access system-level functions
+Log keystrokes and steal user credentials
+Modify system registry settings via script execution
+Send phishing emails using the victim’s email client
+2. In which file format can macros run?
+docx
+xlsx
+pdf
+[x] doc
+pptx
+3. According to the AMSI bypass source code, which part of the code lets the attacker modify the permission to be able to modify the "AmsiScanBuffer" function?
+LeakedAmsiDllAddr = LoadDll("amsi.dll")
+AmsiScanBufferPatchAddr = LeakedAmsiDllAddr + TrvOffset
+[x] Result = VirtualProtect(ByVal AmsiScanBufferPatchAddr, size, PAGE_EXECUTE_READWRITE, 0)
+ScanBufferMagicBytes = "4C8BDC49895B0849"
+InstructionInStringOffset = InStr(LeakedBytesBuffer, ScanBufferMagicBytes)
+
+CDDC2025{********_*********_*********_********_c0llect1on_****_******_********}
+
+
+F. Mobile Forensic
+
+1. What is the main skillset required in mobile forensics?
+Cryptography
+Web Exploitation
+OSINT
+[x] Reverse Engineering
+Cloud Security
+2. What is one of the primary advantages of rooting a mobile device?
+Automatic OS updates
+[x] Ability to customize firmware
+Enhanced network security
+Increased device warranty
+Improved battery health
+3. Which tool can be used to jailbreak an iOS device?
+Metasploit
+[x] checkra1n
+Wireshark
+Snort
+Burp Suite
+4. APK files have a structure similar to which of the following file formats?
+.java
+[x] .zip
+.exe
+.dll
+.iso
+5. Which tool can be used to intercept function calls between software components on a mobile device?
+Ghidra
+IDA Pro
+[x] Frida
+Wireshark
+Nmap
+
+CDDC2025{********_*********_*********_********_**********_plu5_******_********}
+
+
+G. Network Forensic
+
+1. Which tool can be used to capture and analyze packets sent over a network?
+[x] Wireshark
+Nmap
+Snort
+Burp Suite
+Ettercap
+2. If an attacker captures the packets on a password-secured public Wi-Fi, what can they see?
+The full browsing history of users
+The exact passwords typed by users
+All encrypted messages in real time
+The exact keystrokes entered on a device
+[x] The websites visited by users
+3. What is the default credential to access the admin panel on TP-Link routers?
+root:toor
+user:password
+[x] admin:admin
+administrator:admin
+admin:1234
+
+CDDC2025{********_*********_*********_********_**********_****_pr0p3r_********}
+
+
+H. Memory Forensic
+
+1. What tool can you use to analyze a computer memory dump?
+Nmap
+DumpIt
+Wireshark
+[x] Volatility
+IDA Pro
+2. Why is memory sometimes called "volatile storage"?
+Because it is used only for backups
+Because it permanently stores data
+Because it operates slower than a hard drive
+[x] Because it loses data when power is turned off
+Because it cannot be accessed by the CPU
+3. What kind of evidence can we NOT get from a memory dump?
+Module
+Socket
+[x] Full disk files
+Registry
+Process
+
+CDDC2025{********_*********_*********_********_**********_****_******_4nalys1s}
+
+Flag: CDDC2025{th0rou9h_pr0cedur3_inv0lv1ng_3vid3nce_c0llect1on_plu5_pr0p3r_4nalys1s}

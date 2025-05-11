@@ -1,0 +1,114 @@
+A. Information Security Services
+
+1. What information security service provides an unforgeable evidence that a message was sent or received by someone?
+[x] Non-repudiation
+Integrity
+Authentication
+Confidentiality
+Authorization
+2. Which information security service ensures the accuracy and legitimacy of information?
+Availability
+Non-repudiation
+[x] Integrity
+Authentication
+Confidentiality
+3. How can confidentiality be achieved?
+Non-repudiation
+Authentication
+Hashing
+[x] Encryption
+Auditing
+
+CDDC2025{wh3re_***_*****_*******}
+
+
+B. Symmetric Key Cryptography
+
+1. What are the two main concepts that are used in block ciphers like Feistel Cipher?
+Substitution and Transposition
+Encryption and Decryption
+Key Expansion and Permutation
+[x] Confusion and Diffusion
+Hashing and Salting
+2. Using a symmetric key algorithm, two people need one shared key to communicate, and three people need three keys. How many keys will four people need?
+4
+20
+[x] 6
+16
+9
+3. What does CBC stand for in cipher mode of operation?
+Cipher Bit Code
+[x] Cipher Block Chaining
+Cryptographic Block Cipher
+Chained Binary Cipher
+Code Block Control
+4. Which of these options is NOT a block cipher?
+AES
+DES
+3TDEA
+Camellia
+[x] RC4
+5. If you encrypt an image with ECB mode, the image would still be slightly visible. Why is that?
+In ECB, data is compressed before encryption
+In ECB, random padding is added to every block
+In ECB, each pixel is encrypted separately with a unique key
+[x] In ECB, the same input is encrypted into the same output
+In ECB, the entire image is scrambled uniformly
+
+CDDC2025{*****_th3_*****_*******}
+
+
+C. Public Key Cryptography
+
+1. Which of these options is NOT a public key cryptographic algorithm?
+El Gamal
+RSA
+ECDH
+[x] AES
+Diffie-Hellman
+2. Using an asymmetric/public key algorithm, two people need four keys to communicate. How many keys will 16,253,726 people need?
+256
+[x] 32,507,452
+132,091,796,314,675
+16,253,726
+2
+3. If RSA was based on the problem of prime factorization, what was ECC based on?
+Sign theory
+[x] Discrete logarithm
+Subset-sum
+Grid theory
+Knot theory
+4. Say that Alice wants to send Bob a document that is digitally signed by her. How can they do it?
+Alice signs the document using Bob's private key, and Bob verifies the signature using Alice's public key.
+Alice signs the document using Bob's private key, and Bob verifies the signature using Bob's public key.
+[x] Alice signs the document using Alice's private key, and Bob verifies the signature using Alice's public key.
+Alice signs the document using Bob's public key, and Bob verifies the signature using Alice's private key.
+Alice signs the document using Alice's public key, and Bob verifies the signature using Alice's private key.
+
+CDDC2025{*****_***_w0rld_*******}
+
+
+D. Hash Function
+
+1. What is the definition of a hash function?
+A function that generates a unique key pair for encryption.
+A function that converts fixed-size input into variable-size output.
+A function that encrypts data using a symmetric key.
+[x] A function that changes a random data with arbitrary size into output with fixed size.
+A function that compresses data to reduce its size.
+2. Let's say that you hash a string and the result is "37fe1b23bc". You hash another string, and the result is also "37fe1b23bc". What is this phenomenon called?
+Collision
+Checksum
+Second Preimage
+[x] Birthday Problem
+Preimage
+3. What is the least amount of people in a group for that group to have at least 50% probability of having two people with the same birthday?
+72
+730
+365
+183
+[x] 23
+
+CDDC2025{*****_***_*****_wond3rs}
+
+Flag: CDDC2025{wh3re_th3_w0rld_wond3rs}

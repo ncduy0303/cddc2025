@@ -1,0 +1,189 @@
+A. Plaintext Communication Vulnerability
+
+1. What does the CIA Triad stand for in information protection?
+Communication, Integrity, Access
+[x] Confidentiality, Integrity, Availability
+Confidentiality, Internet, Availability
+Cryptography, Integrity, Authentication
+Confidentiality, Integrity, Authentication
+2. Which attack exploits unencrypted communication channels to intercept and manipulate data in real-time?
+SQL Injection
+Cross-Site Scripting (XSS)
+Denial of Service (DoS)
+Buffer Overflow
+[x] Man-in-the-Middle (MITM)
+3. Which protocol is considered insecure due to transmitting credentials in plaintext?
+SSH
+IPsec
+TLS
+[x] FTP
+HTTPS
+4. Which technique helps detect unauthorized access due to plaintext credential exposure?
+Firewall
+Load Balancer
+[x] Intrusion Detection System
+Honeypot
+Network Address Translation (NAT)
+5. A company’s database was altered by an unauthorized user, resulting in incorrect financial records.
+
+What security principle was violated?
+[x] Integrity
+Non-repudiation
+Availability
+Confidentiality
+Authentication
+
+CDDC2025{p4ck3t_**********_********_*********_*********}
+
+B. Port Scan
+
+1. Which network layer does a SYN flood attack target?
+Physical
+[x] Transport
+Data Link
+Application
+Network
+2. What is the reason for an administrator checking open ports?
+[x] To find unintentionally open ports
+To increase the number of open ports
+To prevent network connections
+To install more software
+To optimize CPU usage
+3. How many total possible ports?
+[x] 65535
+65636
+65536
+65435
+65635
+4. Which tool is widely used for port scanning?
+[x] Nmap
+VirtualBox
+Wireshark
+Metasploit
+SQLmap
+5. Why is Nmap preferred over other scanning tools?
+[x] It provides detailed scanning options and flexibility
+It automatically exploits detected vulnerabilities
+It has a user-friendly GUI
+It is the only tool available
+It is faster than all other scanners
+
+CDDC2025{******_1nspect10n_********_*********_*********}
+
+
+C. Sniffing
+
+1. What mode must a network interface be in to capture all packets, including those not addressed to it?
+Broadcast mode
+Secure mode
+Normal mode
+[x] Promiscuous mode
+Encrypted mode
+2. Why is sniffing in a hub environment considered a passive attack?
+Because it disrupts network traffic
+Because it only works with encrypted traffic
+[x] Because all packets are already broadcast to every device
+Because it actively manipulates packet data
+Because it requires exploiting a security vulnerability
+3. How do attackers sniff packets in a switched network environment?
+By enabling Wi-Fi scanning mode
+[x] By attacking the ARP protocol
+By modifying firewall settings
+By using the ifconfig command
+By using DNS poisoning
+4. A security analyst is monitoring network traffic using Wireshark. They need to find all packets exchanged between a specific client and server. Which Wireshark feature should they use?
+MAC filtering
+Export objects
+[x] Follow stream
+Protocol hierarchy
+Traffic shaping
+5. A forensic investigator is analyzing a network breach and suspects sensitive files were transferred. What Wireshark feature can help them retrieve these files?
+Packet injection
+Follow stream
+Promiscuous mode
+[x] Export objects
+IP filtering
+
+CDDC2025{******_**********_f1rew4ll_*********_*********}
+
+
+D. Spoofing
+
+1. What is the primary characteristic of a spoofing attack?
+Encrypting files for ransom
+[x] Gaining trust through impersonation
+Using brute-force techniques
+Sending legitimate emails to users
+Exploiting software vulnerabilities
+2. In an ARP spoofing attack, what role does the attacker's machine typically play?
+Establishes an encrypted tunnel for secure interception
+Modifies DNS records to redirect victims to phishing sites
+Acts as a DHCP server to assign malicious IP addresses
+[x] Impersonates the legitimate gateway to intercept traffic
+Exploits SQL vulnerabilities to gain network access
+3. What is the primary objective of a DNS spoofing attack?
+To block a user's internet access
+To replace MAC addresses in an ARP table
+To manipulate routing tables in a network
+[x] To redirect users to malicious websites
+To disrupt DNS servers through DDoS attacks
+4. What must an attacker do first to launch a DNS spoofing attack?
+Overload the DNS server with fake requests
+Obtain administrator access to the victim’s system
+[x] Gain a Man-in-the-Middle (MITM) position
+Modify the victim’s ARP table manually
+Infect the DNS server with malware
+5. Bob is using his laptop on a company network when he suddenly notices that his internet connection is slow. Meanwhile, an attacker has launched an ARP spoofing attack. Shortly after, Bob logs into his company’s internal system.
+
+What can the attacker do in this case?
+[x] Intercept and read Bob’s login credentials
+Modify Bob’s ARP table to prevent him from accessing the internet
+Encrypt Bob’s traffic to protect it from external threats
+Use SQL injection to gain access to the company's database
+Shutdown Bob's laptop
+
+CDDC2025{******_**********_********_1ntrus10n_*********}
+
+
+E. Denial of Service
+
+1. Which of the following is a key difference between DoS and DDoS attacks?
+DoS attacks target multiple victims, while DDoS attacks focus on one victim
+[x] DoS attacks come from a single system, while DDoS attacks come from multiple systems
+DoS attacks are easier to mitigate than DDoS attacks
+DoS attacks use multiple systems, while DDoS attacks originate from a single source
+DoS attacks are more powerful than DDoS attacks
+2. Which of the following techniques is commonly used in Distributed Reflection Denial of Service (DRDoS) attacks?
+[x] Exploiting open resolvers to amplify attack traffic
+Sending fake authentication requests to trick users into revealing credentials
+Using a computer to send a massive number of requests to the target
+Injecting malicious SQL queries into a database
+Utilizing infected computers to send packets
+3. An attacker floods a target server with a large number of TCP SYN packets but never completes the three-way handshake. As a result, the server keeps resources allocated for half-open connections, eventually becoming unresponsive.
+
+Which type of attack is the attacker using?
+[x] SYN flood attack
+ICMP flood attack
+UDP flood attack
+HTTP flood attack
+DNS amplification attack
+4. A financial institution notices a sudden spike in traffic to its online banking system, causing severe slowdowns for legitimate users. Security logs indicate that multiple servers worldwide are sending a large volume of UDP packets to their system. The IT team also discovers that many of these requests originate from public DNS resolvers.
+
+What type of attack is most likely happening?
+brute force attack
+[x] DNS amplification attack
+SQL injection attack
+ransomware attack
+Phishing attack
+5. A small e-commerce website experiences sudden downtime. The administrator checks the logs and finds that a large number of HTTP requests are coming from different IP addresses, all requesting product pages repeatedly. The server’s resources are exhausted, causing it to crash. The administrator suspects an attack that mimics normal user behavior but at a massive scale.
+
+Which type of attack is most likely occurring?
+Man-in-the-Middle attack
+ARP Spoofing
+[x] HTTP Flood attack
+Zero-day exploit
+SQL Injection
+
+CDDC2025{******_**********_********_*********_d3t3ct10n}
+
+Flag: CDDC2025{p4ck3t_1nspect10n_f1rew4ll_1ntrus10n_d3t3ct10n}

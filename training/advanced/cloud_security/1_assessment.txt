@@ -1,0 +1,174 @@
+A. Normal Computer vs Cloud
+
+1. Which tool is primarily used to scan the ports of a target system?
+Hashcat
+Burp Suite
+[x] Nmap
+Metasploit
+Wireshark
+2. What can you do with Metasploit?
+Extract and analyze digital evidence from compromised systems
+Generate cryptographic hashes for password security
+Monitor and analyze real-time network traffic
+Encrypt sensitive communications between systems
+[x] Verify and exploit the findings from automatic vulnerability scanners
+
+CDDC2025{v4luabl3_******_****_********_****_*****_*******_******}
+
+
+B. Cloud Translation
+
+1. Which of the following is a cloud-native way to host files?
+Store them in a relational database
+Put it on an FTP
+Put it on an internal share
+Deploy them on a Kubernetes cluster
+[x] Put it on S3
+2. What is the counterpart for "firewall" in Azure?
+Cloud CDN
+IAM
+Compute Engine
+VPC
+[x] NSG
+3. What is the term for "internal network" in Google Cloud Platform?
+NSG
+[x] VPC
+Security groups
+Cloud Router
+VPN Gateway
+
+CDDC2025{********_h1dden_****_********_****_*****_*******_******}
+
+
+C. Enumeration
+
+1. Which of these web services will not help in DNS enumeration?
+Dnsdumpster
+Amass
+[x] VirusTotal
+Censys.io
+Shodan
+2. When doing a blind enumeration on a cloud system, what should you target first?
+[x] Storage
+IAM policies
+Compute instances
+Networking rules
+Monitoring logs
+3. What tool can you use to enumerate AWS S3 storage?
+CeWL
+Cloudberry
+AWS Storage Explorer
+[x] AWSBucketDump
+Metasploit
+
+CDDC2025{********_******_g3ms_********_****_*****_*******_******}
+
+
+D. Escalation
+
+1. When attempting to escalate from guest to host within a cloud environment, which of the following actions is most likely to lead to success?
+Monitoring system logs for patterns
+Finding unpatched software vulnerabilities
+Enumerating firewall rules
+Searching for exposed API keys
+[x] Obtaining credentials for other services
+2. What kind of credential is used when authenticating API requests to AWS services?
+[x] AWS HMAC
+AWS Keypair
+AWS RDP
+AWS SSH
+AWS SAS
+3. What is the primary purpose of DNS tunneling?
+[x] A method of using the DNS protocol to communicate covertly by encoding data within DNS queries and responses
+A process for automatically updating DNS records
+A technique for accelerating domain resolution speeds
+A method of encrypting DNS requests for privacy
+A way to bypass a firewall by encapsulating data in DNS queries
+
+CDDC2025{********_******_****_fl0ating_****_*****_*******_******}
+
+
+E. Persistence
+
+1. What should you NOT do to keep your persistence on the target cloud system?
+Whitelist some ranges of IPs that include your IP instead of adding just your IP
+[x] Modify security settings in an obvious way
+Don't break any functionality on the system
+Blend in with other accounts
+Add your own credential
+2. Which of these platforms is a serverless computing platform that allows you to automate tasks without the need to manage infrastructure?
+Google Compute Engine
+Google Kubernetes Engine
+AWS EC2
+[x] AWS Lambda
+Adobe Cloud Functions
+
+CDDC2025{********_******_****_********_h1gh_*****_*******_******}
+
+
+F. Attack Scripts (Python) (1)
+
+1. What is a Python library that allows developers to interact with Amazon Web Services (AWS)?
+ibm-cloud-sdk
+openstack
+azure-mgmt
+[x] boto3
+google-cloud
+2. What can result from insecure deployment and configuration management in a cloud environment?
+The cloud provider will automatically fix security misconfigurations
+[x] Instances can be deployed with weak security configurations or without proper tagging
+Unauthorized access will always be prevented
+All instances will be encrypted by default
+The cloud system will block any insecure deployments
+3. What does the update_function_code() method do in AWS?
+Restart EC2 instances
+[x] Overwrite Lambda function code
+Modify IAM permissions
+Update API Gateway settings
+Change Lambda environment variables
+
+CDDC2025{********_******_****_********_****_abov3_*******_******}
+
+
+G. Attack Scripts (Python) (2)
+
+1. Which command can be used to retrieve information about the volumes attached to an EC2 instance?
+aws ec2 cat-volumes
+[x] aws ec2 describe-volumes
+aws ec2 info-volumes
+aws ec2 print-volumes
+aws ec2 list-volumes
+2. When requesting an IAM security credential on AWS, which of the following is NOT included?
+Secret Access Key
+Token
+Access Key ID
+[x] Email
+Expiration Time
+3. How does an attack on exfiltrating an EBS snapshot typically work?
+It uses a misconfigured S3 bucket to download sensitive files from an AWS account
+It exploits a vulnerability in AWS IAM roles to gain full control over EC2 instances
+[x] It involves granting access to an Amazon Elastic Block Store (EBS) snapshot from Amazon EC2 to an external AWS account
+It leverages DNS tunneling to extract data from a compromised AWS environment
+It injects malicious code into a running EC2 instance to gain persistent access
+
+CDDC2025{********_******_****_********_****_*****_m4ssive_******}
+
+
+H. Case Study (Instagram)
+
+1. What is Sensu?
+[x] A monitoring tool commonly used in IT infrastructure to monitor various aspects of system performance and health
+A cloud-based vulnerability scanner
+A tool for managing Kubernetes clusters
+A network packet analysis tool
+A cloud security firewall that protects against DDoS attacks
+2. As explained in the case study, what made an attack on Instagram possible?
+Weak password policies on Instagram accounts
+A zero-day vulnerability in the Instagram mobile app
+A phishing campaign targeting Instagram employees
+[x] AWS credentials are accessible to an unprivileged user on https://sensu.instagram.com
+An exposed database containing user information
+
+CDDC2025{********_******_****_********_****_*****_*******_c10uds}
+
+Flag: CDDC2025{v4luabl3_h1dden_g3ms_fl0ating_h1gh_abov3_m4ssive_c10uds}

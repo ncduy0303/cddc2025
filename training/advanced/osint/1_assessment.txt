@@ -1,0 +1,222 @@
+A. Intro. to OSINT
+
+1. CPA is the skeleton or structure of OSINT. What is CPA?
+Creating, Protecting, Analyzing
+Catching, Planning, Activating
+Collecting, Penetrating, Accessing
+[x] Collecting, Processing, Analyzing
+Confidentiality, Processing, Availability
+2. Which of the following best describes why Bad USB is an effective method to attack ICS/SCADA systems?
+[x] It allows attackers to bypass network security
+It requires administrator privileges to execute
+It exploits vulnerabilities in remote access protocols
+It tricks employees into sharing their credentials
+It relies on phishing emails to gain initial access
+3. What is the most important factor to consider before delivering a Bad USB attack?
+The brand and capacity of the USB device
+The security policies of the target company
+The type of antivirus software installed
+[x] Identifying someone with access to the internal system
+The encryption methods used by the company
+4. Which one is not part of the OSINT process?
+Results delivery
+Data analysis
+Data harvesting
+Source identification
+[x] Data filtering
+
+CDDC2025{collect_********_*******_********_******_*****_*******_******}
+
+
+B. Protect Yourself First for OSINT
+
+1. Why is it important to use a secure browser for OSINT investigations?
+It automatically encrypts all internet traffic
+It removes all malware from a system
+It allows access to restricted websites
+[x] It prevents tracking and data collection
+It provides a faster internet speed
+2. What is the main benefit of using Torsocks in OSINT investigations?
+It works only on Windows systems
+It makes your internet faster
+It provides built-in antivirus protection
+It guarantees complete anonymity
+[x] It changes your IP address
+3. What is a potential risk of using a paid VPN for OSINT?
+[x] VPN providers could be compromised
+VPNs increase the risk of malware infection
+Paid VPNs do not work with Torsocks
+Paid VPNs are not as secure as free VPNs
+A VPN prevents all tracking
+4. Why should you avoid using personal or work email accounts for OSINT investigations?
+They do not support encryption
+[x] They contain personal or company-related information
+They automatically delete OSINT-related emails
+They are too slow for OSINT tasks
+They cannot send or receive messages from the dark web
+
+CDDC2025{*******_validate_*******_********_******_*****_*******_******}
+
+
+C. Shodan and Censys
+
+1. Which of the following best describes the primary purpose of Shodan and Censys?
+Encrypting and securing web traffic
+Hosting cloud-based applications and databases
+Searching for online news articles and blogs
+Managing website domains and hosting services
+[x] Finding vulnerabilities and gathering intelligence on Internet-connected devices
+2. What is the main advantage of Censys over Shodan in terms of search capabilities?
+Shodan provides more detailed SCADA system information than Censys
+Censys provides real-time vulnerability detection, while Shodan does not
+Shodan allows searching for deep web content, whereas Censys does not
+[x] Censys offers over 100 filter functions, while Shodan provides fewer filters and has removed the 'before and after' filter
+Censys is free for all users, while Shodan requires a paid subscription
+3. How can you access Censys for searches?
+[x] By searching for Censys on Google and visiting its website
+By downloading a desktop application
+By installing a browser extension
+By using a special command-line tool
+By requesting access through government agencies
+
+CDDC2025{*******_********_analyze_********_******_*****_*******_******}
+
+
+D. DeepWeb and DarkWeb
+
+1. What is the key difference between the Deep Web and the Dark Web?
+The Deep Web is indexed by search engines, while the Dark Web is not
+The Deep Web is illegal, while the Dark Web is legal
+The Dark Web is used exclusively for cybercrime, while the Deep Web is used for everyday activities
+The Dark Web can be accessed without special tools, while the Deep Web requires a VPN
+[x] The Deep Web requires authentication, while the Dark Web requires special software
+2. Which of the following is not a well-known Dark Web application?
+Freenet
+[x] Google Chrome
+Zeronet
+I2P
+Tor
+3. What is the primary function of Onion Routing in the Tor network?
+[x] To provide multiple layers of encryption for anonymity
+To store website addresses in a secure database
+To prevent users from accessing certain Dark Web sites
+To allow users to bypass government firewalls
+To reduce internet speed and bandwidth usage
+
+CDDC2025{*******_********_*******_document_******_*****_*******_******}
+
+
+E. Google Dork
+
+1. What is the primary purpose of the Exploit Database’s Google Hacking Database (GHDB)?
+[x] It provides a collection of search queries used for penetration testing
+It is a repository of zero-day exploits used by ethical hackers
+It collects login credentials from exposed databases
+It is a list of government-approved cybersecurity techniques
+It is an automated tool that scans websites for vulnerabilities
+2. What could be a potential risk of using Google Dorking for security research?
+It sends alerts to website owners whenever their data is searched
+It allows direct access to confidential data stored on secure servers
+It automatically exploits found vulnerabilities without user interaction
+It only works if the user has administrative access to Google’s backend systems
+[x] Conducting unauthorized searches may violate ethical and legal boundaries
+3. Which search operator would be most effective in finding publicly exposed database files?
+[x] filetype:sql
+site:gov AND intext:"Login required"
+inurl:adminlogin
+link:"index.php?id="
+intitle:"Welcome to Apache"
+
+CDDC2025{*******_********_*******_********_secure_*****_*******_******}
+
+
+F. Intro. to Maltego
+
+1. Which of the following is NOT a method of collecting OSINT data?
+Using Maltego for visualization
+Using a crawling system
+[x] Guessing passwords manually
+Scraping data from newspapers
+Purchasing data from providers
+2. What is Maltego primarily used for?
+[x] Visualizing and analyzing OSINT data
+Bypassing login authentication for secure databases
+Hiding digital footprints while browsing
+Encrypting OSINT data before storing it
+Automatically detecting OSINT vulnerabilities in websites
+3. What are the three main components of Maltego?
+Nodes, Graphs, and Relations
+Dataset, Connector, and Report
+Variables, Functions, and Outputs
+Server, Client, and API
+[x] Entity, Transform, and Machine
+4. What is the purpose of the Transform Hub in Maltego?
+To generate automated investigation reports
+To secure OSINT data through encryption
+To provide storage for user-created graphs
+To create and edit Entities for future use
+[x] To install and manage third-party Transforms
+
+CDDC2025{*******_********_*******_********_******_share_*******_******}
+
+
+G. Maltego Use Cases
+
+1. What potential advantage does visualizing relationships between entities in Maltego provide for intelligence analysis?
+It reduces the number of false positives by filtering out entities with low relevance scores
+[x] It allows investigators to track direct and indirect links between data points, revealing hidden correlations
+It ensures that all entities displayed are verified for authenticity and relevance
+It automatically validates all retrieved data against an external threat intelligence database
+It prioritizes recent data over older sources, ensuring time-sensitive intelligence is highlighted
+2. Why is it essential to determine the investigation’s goal before selecting Transforms in Maltego?
+Because certain Transforms require manual validation before displaying results
+[x] Because different Transforms produce different types of entities, which can affect the relevance of the results
+Because running too many Transforms simultaneously may result in system performance issues
+Because Maltego limits the number of Transforms that can be executed per session
+Because selecting the wrong Transform could permanently alter the Maltego workspace structure
+3. How can Maltego investigate social media accounts?
+By analyzing the correlation between social media activity and weather patterns
+[x] By using Transform to visualize social media accounts and their connections
+By conducting sentiment analysis on social media discussions about cybersecurity
+By identifying connections between social media profiles and their interactions
+By visualizing the geographic distribution of social media users
+4. How can Maltego be utilized for investigating phishing campaigns?
+By correlating phishing email activity with stock market fluctuations
+By visualizing the global distribution of phishing victims based on reported incidents
+By identifying connections between phishing emails, domain registrations, and threat actors
+By analyzing the sentiment of public discussions about phishing threats
+[x] By using Transforms to map relationships between phishing domains, email senders, and infrastructure
+
+CDDC2025{*******_********_*******_********_******_*****_standby_******}
+
+
+H. Local Transforms and Machines
+
+1. What must be installed before running 'xeuledoc' in a Maltego Local Transform?
+[x] Maltego-trx module for local transform management
+A database to store Google Document metadata
+Python 2.7 to ensure compatibility
+A custom-built API key for Google document access
+A specific browser extension to extract document details
+2. How does 'search_google_docid.py' compare to 'xeuledoc' in functionality?
+[x] It provides the same functionality as 'xeuledoc' but as a standalone Python file
+It allows real-time monitoring of document modifications
+It is a GUI-based tool that makes Google document investigation easier
+It offers advanced OSINT capabilities beyond metadata extraction
+It integrates directly with the Google API for data retrieval
+3. What is the primary function of the 'Company Stalker' machine in Maltego?
+To monitor financial transactions linked to a company
+[x] To discover relationships between a given domain and its associated entities
+To scan and analyze a company’s internal security policies
+To track employees’ browsing history in an organization
+To identify vulnerabilities in a company’s network infrastructure
+4. How can Maltego be leveraged to uncover threat actor infrastructure in an APT (Advanced Persistent Threat) investigation?
+By automatically launching penetration tests against suspected infrastructure
+[x] By chaining domain, IP, and ASN-based Transforms to identify interconnected assets
+By using sentiment analysis to detect public discussions about APT groups
+By analyzing stock market movements to correlate with suspected cyber incidents
+By running AI-based anomaly detection on domain registration data within Maltego
+
+CDDC2025{*******_********_*******_********_******_*****_*******_repeat}
+
+Flag: CDDC2025{collect_validate_analyze_document_secure_share_standby_repeat}

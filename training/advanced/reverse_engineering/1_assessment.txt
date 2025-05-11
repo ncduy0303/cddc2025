@@ -1,0 +1,272 @@
+A. Why Do We Learn REV?
+
+1. What is the main characteristic of the Waterfall Model in software development?
+Development method that does not require documentation
+Flexible approach that allows changes in every phase
+Model that focuses on hardware rather than software
+Modern Agile methodology used in software engineering
+[x] Sequential process where each phase is completed before moving to the next
+2. What is the primary difference between Forward Engineering and Reverse Engineering?
+Forward Engineering modifies existing software, while Reverse Engineering builds software from scratch
+Forward Engineering is illegal, while Reverse Engineering is always ethical
+[x] Forward Engineering creates new applications, while Reverse Engineering analyzes existing ones
+Forward Engineering deals with hardware, while Reverse Engineering only deals with software
+Forward Engineering focuses on hacking applications, while Reverse Engineering prevents hacking
+3. What is the primary goal of reverse engineering?
+To create a linear and sequential approach to system development
+To follow the waterfall model in software development
+[x] To identify and understand the functionalities of an existing application
+To manipulate existing source code for personal gain
+To develop new applications from scratch
+4. A researcher wants to understand how a mobile banking app encrypts transactions. They reverse-engineer the app but do not exploit any vulnerabilities.
+
+Is this legal?
+No, because banking apps are protected by encryption laws
+No, reverse-engineering software is always illegal
+[x] It depends on the app’s terms of service and regional laws
+Yes, as long as they don’t exploit it
+Yes, because cybersecurity researchers are allowed to analyze any software
+5. How is reverse engineering sometimes used in the context of gaming?
+[x] To make games easier, known as "game hacking"
+To create new games from scratch, emphasizing innovation
+To manipulate source code for personal gain without ethical concerns
+It is not used in gaming
+Only professionals are allowed to use reverse engineering in gaming
+
+CDDC2025{und3rst4ndin9_***********_******_****_*****_*****_*********_*********}
+
+
+B. Understanding the C Language
+
+1. What is the primary role of the argc and argv parameters in the main function?
+They define global variables used in the program
+[x] They store the number and values of command-line arguments
+They allocate memory for the program execution
+They execute system-level calls before the program starts
+They determine the return value of the main function
+2. Why do C programs written for Windows sometimes fail on Linux?
+Linux does not allow global variables
+[x] Differences in system libraries and APIs cause incompatibility
+Windows programs use a different syntax from Linux
+Linux does not support the C programming language
+The C language is not cross-platform
+3. What does RTL stand for in the context of compiler design?
+Reduced Tree Logic
+Runtime Translation Layer
+Reconfigurable Template Layout
+Reverse Table Lookup
+[x] Register Transfer Language
+4. What is ASCII used for in computing?
+Converting files into hexadecimal format
+[x] Representing text using character encoding
+Encrypting files
+Compressing data
+Storing binary machine code
+
+CDDC2025{*************_4pplic4t1on_******_****_*****_*****_*********_*********}
+
+
+C. Intro. to Assembly
+
+1. What is the role of the mov command in assembly language?
+Sets a breakpoint in a debugger
+Allows manipulation of program addresses
+[x] Transfers a value to a register or stack
+Stores the address of the next instruction to be executed
+Compares two values and produces results
+2. What best describes the function of a breakpoint in debugging?
+Command used to manipulate register values at runtime
+Software vulnerability that attackers exploit to hijack execution flow
+CPU register that tracks function return addresses
+[x] Designated stopping point in program execution for inspection
+Predefined memory location that holds runtime exceptions
+3. Which register is responsible for storing the address of the next instruction to be executed?
+ESP
+[x] EIP
+ESI
+EAX
+EBP
+4. Which statement best describes the purpose of the cmp instruction in assembly?
+Directly modifies register values based on a comparison result
+Performs arithmetic subtraction and stores the result in the destination operand
+Swaps the values of two registers if a condition is met
+[x] Compares two values and updates CPU flags without storing a result
+Redirects execution flow based on a predefined comparison
+5. What is the primary difference between ESI and EDI registers?
+ESI stores temporary arithmetic results, whereas EDI manages loop counters
+ESI and EDI are interchangeable and serve the same purpose in different CPU modes
+[x] ESI is the source index for memory operations, while EDI is the destination index
+ESI holds the target memory address for data storage, while EDI keeps track of function return addresses
+ESI is primarily used for control flow management, while EDI assists in floating-point calculations
+
+CDDC2025{*************_***********_s0urc3_****_*****_*****_*********_*********}
+
+
+D. Architecture
+
+1. Which component of a computer is responsible for temporarily storing input values before processing?
+[x] A register, which briefly holds values for immediate use
+RAM, which acts as a long-term buffer for user inputs
+Cache memory that interacts with disk storage
+The CPU's instruction queue, where inputs are decoded and executed
+The ALU, where all arithmetic and logical operations take place
+2. What is the primary role of a debugger in reverse engineering?
+It accelerates software execution for performance testing
+[x] It allows analysis of program execution, memory states, and CPU behavior
+It provides a graphical interface for interacting with the operating system
+It only works with high-level languages such as Java and C#
+It prevents software from being reverse-engineered
+3. Why is it important to monitor register values during reverse engineering?
+Monitoring registers allows bypassing all security mechanisms in a program
+The debugger modifies register values automatically for efficiency
+[x] Changes in register values can indicate anti-debugging techniques
+Register values determine the file type of an executable
+Registers permanently store program instructions for execution
+4. Why is setting a breakpoint (F2) useful in a debugger?
+It allows real-time modifications to the CPU’s instruction set
+It automatically modifies the EAX register for debugging
+[x] It interrupts execution at a specific point for analysis
+It forces the debugger to rewrite a program’s instructions
+It stops the debugger from detecting anti-debugging measures
+
+CDDC2025{*************_***********_******_c0de_*****_*****_*********_*********}
+
+
+E. Encode or Decode?
+
+1. What is the primary function of an Encoder in digital circuits?
+[x] It converts multiple input signals into a simplified binary code
+It processes and filters signals in communication systems
+It improves network security by encoding messages
+It translates human-readable text into machine code
+It organizes and compresses digital data for storage
+2. What is the function of a Decoder in digital circuits?
+It amplifies weak signals to improve communication quality
+It reduces processing time by simplifying complex calculations
+It converts human language into digital instructions
+[x] It translates binary signals into meaningful outputs
+It protects sensitive information by scrambling data
+3. Which of the following best describes how RC4 (Rivest Cipher 4) functions in cryptography?
+[x] Stream cipher operation
+XOR-based encryption
+Shift operation
+Secure key generation
+Advanced encryption
+4. How does CRC (Cyclic Redundancy Checking) contribute to data communication?
+Simple logical operation
+Stream cipher operation
+[x] Checking the integrity of data
+Performing shift operations
+Encrypting ASCII code
+5. Why is BASE 64 commonly used in data encoding?
+It provides stronger encryption than BASE 16
+It is primarily designed for numerical computations
+It reduces the size of data significantly
+It ensures lossless compression of binary data
+[x] It allows binary data to be safely represented in text-based formats
+
+CDDC2025{*************_***********_******_****_l0gic_*****_*********_*********}
+
+
+F. API for Reversing
+
+1. What is the main objective of CTF (Capture the Flag) competitions in cybersecurity training?
+To replace traditional cybersecurity certifications
+To automate vulnerability assessment processes
+To measure theoretical knowledge of cybersecurity concepts
+[x] To simulate real-world cyberattack scenarios in a controlled environment
+To develop custom security tools for enterprises
+2. What is a common way cybercriminals use keyloggers?
+[x] To steal login credentials and personal information
+To automatically correct typos as users type
+To improve typing accuracy by tracking user mistakes
+To speed up system performance by monitoring input lag
+To detect and block phishing attempts in real-time
+3. Which set of API functions is primarily used for modifying and managing the Windows Registry?
+[x] RegOpenKey, RegCreateKey, RegDeleteKey
+VirtualAlloc, VirtualProtect, WriteProcessMemory
+CryptAcquireContext, CryptEncrypt, CryptHashData
+NtQuerySystemInformation, ZwQueryInformationProcess, NtReadVirtualMemory
+CoCreateInstance, OleInitialize, CLSIDFromString
+4. Which function is responsible for determining the ordinal relationship between two strings in C?
+_mbscmp_l
+wmemcpy
+memmove
+strncmp
+[x] strcmp
+5. Which function is used to check the status of a specific key at the time of the function call?
+CallNextHookEx
+SetWindowsHookEx
+[x] GetAsyncKeyState
+AttachThreadInput
+GetKeyState
+
+CDDC2025{*************_***********_******_****_*****_us1ng_*********_*********}
+
+
+G. Packing and Anti-Debugging
+
+1. What is the primary function of a packer in software?
+To encrypt a program and prevent reverse engineering
+[x] To compress and obfuscate an executable file
+To analyze the internal structure of an executable file
+To optimize a program’s performance by reducing its size
+To modify an executable file's source code
+2. Which of the following statements about UPX is true?
+[x] It is an open-source executable packer commonly used in malware
+It permanently modifies the original executable file
+It is used to analyze PE structures directly
+It only supports x86 platforms
+It includes anti-debugging and encryption features
+3. Which of the following statements about the Original Entry Point (OEP) in a packed executable is true?
+It represents the final execution address after unpacking is complete
+[x] It marks the location of the unpacking routine code
+It permanently alters the program’s execution flow
+It is the memory address where the main encoded data is stored
+It is used to bypass anti-debugging mechanisms
+4. Which anti-debugging API function is commonly used to detect the presence of a debugger attached to a process?
+[x] CheckRemoteDebuggerPresent
+OutputDebugString
+NtQueryInformationProcess
+FindWindow
+GetLastError
+5. Which anti-debugging API function relies on retrieving process information from the operating system?
+[x] NtQueryInformationProcess
+CheckRemoteDebuggerPresent
+FindWindow
+GetLastError
+OutputDebugString
+
+CDDC2025{*************_***********_******_****_*****_*****_d3duct1v3_*********}
+
+
+H. Obfuscation and VM
+
+1. Which of the following best describes obfuscation in the context of software development and security?
+[x] It is a technique used to hide the purpose or logic of code, making it harder to understand
+It is a debugging technique used to trace vulnerabilities in a program
+It is a method used exclusively by malware developers to evade detection
+It is a feature of EDR systems that helps detect and prevent malware execution
+It is a process that removes all security measures from software
+2. Which of the following best describes a key component in the operation of a custom-built virtual machine?
+Conducting EDR analysis
+Binary program exploitation
+[x] Opcode processing
+Extraction of information from logs, image, or audio
+Decryption or breaking encryption
+3. Which of the following best describes VirtualBox?
+[x] A hypervisor used to run virtual machines
+A built-in Windows security feature
+A containerization tool for deploying applications
+A database management system
+A network traffic analysis tool
+4. What does the CPU use to identify whether an operation is addition or subtraction?
+The file extension of the program
+The name of the function
+[x] The opcode and register following the instruction
+The operating system version
+The type of programming language used
+
+CDDC2025{*************_***********_******_****_*****_*****_*********_re4son1ng}
+
+Flag: CDDC2025{und3rst4ndin9_4pplic4t1on_s0urc3_c0de_l0gic_us1ng_d3duct1v3_re4son1ng}
