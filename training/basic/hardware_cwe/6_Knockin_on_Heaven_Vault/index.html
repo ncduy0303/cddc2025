@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Form</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="vault">
+      <div class="door">
+        <div class="monitor">
+          <form action="/" method="post" class="input-form">
+            <input type="text" id="input_data" name="input_data" />
+            <div class="output-box" id="output_data"></div>
+            <div class="keypad">
+              <button onclick="appendNumber('1')">1</button>
+              <button onclick="appendNumber('2')">2</button>
+              <button onclick="appendNumber('3')">3</button>
+              <button onclick="appendNumber('4')">4</button>
+              <button onclick="appendNumber('5')">5</button>
+              <button onclick="appendNumber('6')">6</button>
+              <button onclick="appendNumber('7')">7</button>
+              <button onclick="appendNumber('8')">8</button>
+              <button onclick="appendNumber('9')">9</button>
+              <button onclick="appendNumber('0')">0</button>
+            </div>
+            <div class="open">
+              <button onclick="appendS('s')">Open</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="block1"></div>
+      <div class="block2"></div>
+    </div>
+
+    <script>
+      function appendNumber(number) {
+        var inputField = document.getElementById("input_data");
+        inputField.value += number;
+      }
+      function appendS(yes) {
+        var inputField = document.getElementById("input_data");
+        inputField.value = yes;
+      }
+    </script>
+  </body>
+</html>

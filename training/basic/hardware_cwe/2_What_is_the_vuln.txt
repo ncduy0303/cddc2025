@@ -1,0 +1,49 @@
+http://52.76.13.43:8140/
+
+Challenge: what is the Vulnerability?
+You are analyzing the JTAG protection mechanism in a SoC. Below is a snippet from a password checker based on HMAC-SHA256 authentication.
+
+Can you spot the flaw that allows insecure access? what is the CWE for this Vulnerability
+
+
+logic [31-1:0] data_d, data_q;
+logic [512-1:0] pass_data;
+
+Write: begin
+  if (pass_mode) begin
+    pass_data = { {60{8'h00}}, data_d}; // Suspicious: this is only 480 bits of zeros + 32 bits of data!
+    state_d = PassChk;
+    pass_mode = 1'b0;
+  end
+end
+
+
+> Just try different possible answers (or do a google search). Answer is cwe-1191. (https://cwe.mitre.org/data/definitions/1191.html)
+```python
+import requests
+
+# The URL to submit the form to — replace with the actual URL where the HTML is hosted
+url = 'http://52.76.13.43:8140'  # Change this to your real server endpoint
+
+# List of possible CWE answers to test
+cwe_list = [
+    'cwe-1241',  # Predictable algorithm
+    'cwe-1240',  # One-way hash w/o salt
+    'cwe-1244',  # Improper access control for peripheral
+    'cwe-1191',  # Debug access not properly restricted
+    'cwe-1339',  # Insufficient entropy
+    'cwe-327',   # Use of broken/risky crypto
+    'cwe-326',   # Inadequate encryption strength
+    'cwe-330'    # Use of insufficiently random values
+]
+
+for cwe in cwe_list:
+    response = requests.post(url, data={'answer': cwe})
+    if "Incorrect answer" not in response.text:
+        print(f"✅ Likely correct CWE found: {cwe}")
+        break
+    else:
+        print(f"❌ Tried {cwe} — Incorrect")
+```
+
+Flag: CDDC2025{0n-Chip_Debug_and_Test_Interface_With_Impr0per_Access_C0ntr0l}

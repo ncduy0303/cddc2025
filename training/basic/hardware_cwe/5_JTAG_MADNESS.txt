@@ -1,0 +1,52 @@
+http://52.76.13.43:8143/
+
+Riddle answer : cwe-1244
+
+Challenge: JTAG_MADNESS
+CTF Image
+You’ve intercepted a microcontroller-based smart device. The board exposes some unpopulated pads labeled TDI, TDO, TCK, and TMS. Looks like JTAG, huh?
+You hooked it up and scanned using your favorite JTAG tool, and got the following output.
+
+Can you uncover any secrets from the exposed debug interface? But before that, what is the CWE for: "providing internal assets with the wrong debug access level, exposing the asset to untrusted debug agents"?
+
+
+[INFO] Starting JTAG scan...
+[INFO] Detected TCK pulse
+[INFO] IDCODE scan found 1 device
+[DEVICE 0]
+  - IDCODE: 0x4BA00477
+  - Manufacturer: ARM
+  - Part: Cortex-M3
+  - IR Length: 4
+  - Access: FULL DEBUG (No restrictions)
+
+[INFO] Enumerating memory map...
+  Found valid memory range: 0x08000000 - 0x0803FFFF (FLASH)
+  Found valid memory range: 0x20000000 - 0x2000FFFF (SRAM)
+  Found Debug Port: DAP v1
+  Found access to AHB-AP
+
+[INFO] Dumping FLASH @ 0x08000100 → 0x080001F0...
+cwe-?
+ Submit
+
+> Submit `cwe-1244` as the answer
+Flag: 0x08000100: DE AD BE EF 00 11 22 33 44 55 66 77 88 99 AA BB 0x08000110: C0 FF EE 12 34 56 78 9A BC DE F0 0D 15 EA 5E C0 0x08000120: 00 00 00 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0x08000130: 0D 0E 0F 10 FF EE DD CC BA AD C0 DE FA CE BE EF 0x08000140: 43 44 44 43 32 30 32 35 7b 6a 74 61 67 5f 61 63 0x08000150: 63 65 73 73 5f 67 72 61 6e 74 65 64 5f 6f 76 65 0x08000160: 72 5f 6a 74 61 67 7d 00 00 00 00 20 20 20 20 20 0x08000170: 00 00 00 00 0A 0B 0C 0D 0E 0F 10 11 12 13 14 15 0x08000180: 11 22 33 44 55 66 77 88 99 AA BB CC DD EE FF 00 [INFO] JTAG scan complete.
+
+```python
+import re
+
+dump = """
+Flag: 0x08000100: DE AD BE EF 00 11 22 33 44 55 66 77 88 99 AA BB 0x08000110: C0 FF EE 12 34 56 78 9A BC DE F0 0D 15 EA 5E C0 0x08000120: 00 00 00 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0x08000130: 0D 0E 0F 10 FF EE DD CC BA AD C0 DE FA CE BE EF 0x08000140: 43 44 44 43 32 30 32 35 7b 6a 74 61 67 5f 61 63 0x08000150: 63 65 73 73 5f 67 72 61 6e 74 65 64 5f 6f 76 65 0x08000160: 72 5f 6a 74 61 67 7d 00 00 00 00 20 20 20 20 20 0x08000170: 00 00 00 00 0A 0B 0C 0D 0E 0F 10 11 12 13 14 15 0x08000180: 11 22 33 44 55 66 77 88 99 AA BB CC DD EE FF 00 [INFO] JTAG scan complete.
+"""
+
+# Extract all hex bytes
+hex_bytes = re.findall(r'\b([0-9A-Fa-f]{2})\b', dump)
+
+# Convert to ASCII
+flag = ''.join(chr(int(b, 16)) for b in hex_bytes)
+
+print(flag)
+```
+
+Flag: CDDC2025{jtag_access_granted_over_jtag}

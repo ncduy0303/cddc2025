@@ -1,0 +1,10 @@
+Well, the vault isn't very heavenly...
+But we still want it open, don't we?
+
+http://52.76.13.43:8148/
+
+> Write a Selenium script to automate the process of checking password digit by digit.
+> The password is 8438261782173952.
+
+Flag: CDDC2025{1_L1ST3N3D_T0_Y0UR_C0D3_T1CK1NG}
+

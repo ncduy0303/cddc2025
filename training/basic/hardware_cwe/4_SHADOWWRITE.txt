@@ -1,0 +1,47 @@
+http://52.76.13.43:8142/
+
+Challenge: Shadow Write
+CTF Image
+Analyze the Verilog snippet! Can you spot the flaw in the RTL code and determine the alternate address that could be used to change the protected value?
+
+You've intercepted a Verilog module running on a mysterious IoT device. It implements a security feature controlled by an access-controlled register at address 0xF00. However, something seems fishy — you suspect there's a shadow copy of this register that bypasses the security mechanism.
+
+Due to an incomplete address authorization check, an attacker can write to a shadow register that mirrors a protected one.
+
+Note: The register ACCESS_GATE is located at address 0xF00. A mirror of this register, called COPY_OF_ACCESS_GATE, exists at location 0x800F00. The register ACCESS_GATE is protected from unauthorized agents and only allows access to select IDs, while COPY_OF_ACCESS_GATE is not.
+
+
+module foo_bar(data_out, data_in, incoming_id, address, clk, rst_n);
+    output reg [31:0] data_out;
+    input [31:0] data_in, incoming_id, address;
+    input clk, rst_n;
+
+    wire write_auth, addr_auth;
+    reg [31:0] acl_oh_allowlist, q;
+
+    assign write_auth = | (incoming_id & acl_oh_allowlist) ? 1 : 0;
+
+    always @* begin
+        acl_oh_allowlist <= 32'h8312;
+    end
+
+    assign addr_auth = (address == 32'hF00) ? 1 : 0; // Bug: Doesn't include shadow register!
+
+    always @ (posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            q <= 32'h0;
+            data_out <= 32'h0;
+        end else begin
+            q <= (addr_auth & write_auth) ? data_in : q;
+            data_out <= q;
+        end
+    end
+endmodule
+
+    
+Submit the 32-bit hex address with no 0x
+ Submit
+
+> Just submit `800F00` (the answer is already mentioned in the question lol)
+
+Flag: CDDC2025{NOW_Attacker_can_not_Write_2_Shadow_Register}
