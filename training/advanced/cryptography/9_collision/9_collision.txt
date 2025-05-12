@@ -1,0 +1,11 @@
+Dex said, "I made an app where you can get a flag, but you have to be a registered user."
+
+You replied, "Why do you leave the username and hashed passwords?"
+
+Dex said, "I mean, as long as they're hashed, you can't find out the original password; or can you?"
+
+nc 52.76.13.43 8082
+
+> Just get any string such that the sum of the ASCII values of the characters matches the hash value.
+
+Flag: CDDC2025{h4sh_func7i0n5_ar3_pr0n3_t0_c0ll1si0ns_5o_c0ns1d3r_1t_wh3n_m4kin9_on3}

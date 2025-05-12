@@ -1,0 +1,7 @@
+Hello, Brainhackers!
+I'm Dex, and cryptography is a crucial skill that will help us defeat Cypher.
+I will guide you through this field, starting from the basics.
+Here is a simple implementation of AES.
+Can you decrypt the flag?
+
+Flag: CDDC2025{AES_al5o_kn0wn_4s_4dvanc3d_3ncrypt1on_5yst3m}

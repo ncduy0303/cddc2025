@@ -1,0 +1,12 @@
+Hashing is a method that takes data and returns a fixed-sized string.
+Hashing algorithms are one-way functions; meaning that once data is hashed, it is extremely difficult to retrieve the original input.
+This is why passwords are stored in databases as hash format.
+
+However, some hash values can be "reversed" using certain tools.
+For this challenge, crack the following MD5 hash and wrap the answer in the flag format "CDDC2025{   }".
+
+Hash: daeccf0ad3c1fc8c8015205c332f5b42
+
+> Use online md5 decoder tool such as https://10015.io/tools/md5-encrypt-decrypt
+
+Flag: CDDC2025{apples}

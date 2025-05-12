@@ -1,0 +1,8 @@
+Do you know that CBC mode has a famous attack that lets you modify the plaintext?
+
+nc 52.76.13.43 8080
+
+> Reference: https://www.bigous.me/2023/11/17/CBC-bit-flipping-en.html
+> A textbook bit flipping attack on CBC mode.
+
+Flag: CDDC2025{1ns3cur3_1mpl3ment4t10n_0f_A3S_l3d_t0_pr1v1l3g3_3sc4l4t1on}

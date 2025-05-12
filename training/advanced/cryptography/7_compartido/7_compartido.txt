@@ -1,0 +1,15 @@
+We need to intercept Cypher's communication to be able to infiltrate into his data facility.
+Here, I have prepared you a scenario for you to learn.
+
+Alice and Bob are exchanging a secret key using the Diffie-Hellman protocol.
+The secret key they shared will then be used by Alice as the AES key to encrypt the flag. 
+
+In this scenario, you act as the Man-In-The-Middle.
+You are able to intercept and modify the messages they send to each other.
+How can you get the flag?
+
+nc 52.76.13.43 8081
+
+> Class MITM attack by controlling the public keys.
+
+Flag: CDDC2025{4nd_w1th_th4t_al1c3_sh4r3d_a_s3cr3t_w1th_3v3_l3av1n9_b0b_4l0n3}

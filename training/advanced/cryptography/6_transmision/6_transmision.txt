@@ -1,0 +1,6 @@
+Let's say that I have one important message to tell Star, BH-2000, and you.
+I made sure that for each of you, I will use different modulus when encrypting the flag.
+Can you recover the flag?
+
+> Reference: https://github.com/utisss/foreverctf-writeups/blob/master/crypto-broadcast-attack.md, https://docs.xanhacks.xyz/crypto/rsa/08-hastad-broadcast-attack/
+> Textbook Hastad’s Broadcasting Attack

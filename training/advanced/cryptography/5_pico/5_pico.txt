@@ -1,0 +1,8 @@
+Can you decrypt this RSA-encrypted message?
+All the parameters you need are here.
+
+> Reference: https://crypto.stackexchange.com/questions/18301/textbook-rsa-with-exponent-e-3
+> Textbook RSA when e = 3
+> Just calculate the cube root of c mod n using sagemath
+
+Flag: CDDC2025{sm4ll_e_b1g_n_3qu4ls_d1s4ster}
