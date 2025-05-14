@@ -1,0 +1,11 @@
+http://52.76.13.43:8144/
+
+Challenge: What kind of technology is it?
+What is the name of the technology that allows Windows 32bit applications to run on Windows 64bit?
+
+Enter the answer here
+ Submit
+
+> Answer: WoW64
+
+Flag: CDDC2025{WoW_IS_VERY_INTERESTING_TECH}

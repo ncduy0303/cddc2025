@@ -1,0 +1,13 @@
+In her spare time, Star likes to randomly watch a livestream of places around the world.
+
+In the video, a train is passing along the elevated rail tracks.
+What is the next station the train will stop?
+
+Flag format : CDDC2025{   }
+ - All lowercase
+
+> https://drive.google.com/file/d/1KRj4Qq4TkrRzWVx483cxFWrEIXYWrQ6D/view
+> Use reverse image search to locate the buulding to be Acty Shiodome
+> Google Maps to know the line is Yurikamome, then just try some stations along the line
+
+Flag: CDDC2025{takeshiba}

@@ -1,0 +1,14 @@
+We received a tip from BH-2000 that Cypher left a clue in an NFT that could help us.
+Your task is to examine the transaction history of Cypher's wallet: 
+0xEDFfD5AEc7f8f1b9E112DD12C04507359A578d47
+
+Find the NFT and retrieve the flag. Cypher has been using Sepolia!
+
+> https://sepolia.etherscan.io/address/0xEDFfD5AEc7f8f1b9E112DD12C04507359A578d47
+> https://sepolia.etherscan.io/tx/0xf7eb14d1f61e73a713cee53ff73d55b0242801d2241b170062f3238b809465d4https://sepolia.etherscan.io/tx/0xf7eb14d1f61e73a713cee53ff73d55b0242801d2241b170062f3238b809465d4
+> Hey, keep it up! I know you can do it!
+> https://sepolia.etherscan.io/tx/0x45562689ae26ccdacdebb349c6237571bfc1ece81e0f78e6f89cd6aff0864884
+> Smart move haha, thanks! CID : bafkreifm5tdw6sqb6mgzqmrdkmarpdioncyirczmcurfahaftchhlbze7y
+> https://ipfs.io/ipfs/bafkreifm5tdw6sqb6mgzqmrdkmarpdioncyirczmcurfahaftchhlbze7y
+
+Flag: CDDC2025{transparency_immutable_decentralized}

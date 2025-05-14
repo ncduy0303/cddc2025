@@ -1,0 +1,13 @@
+Challenge: WHOISTHISPOKEMON
+Pikachu says:Discover the red-nosed one and tell me what its final form is called!
+
+Riddle Image
+Answer all in lowercase X space
+ Submit
+
+Download packet and find Pokemon
+
+> extract png files from packets in wireshark, and look for the one with a red nose (it is the last packet that returns a png file)
+> its final form is called "samurott"
+
+Flag: CDDC2025{Finally?OMGAfterSomanyPIKKAhints!}

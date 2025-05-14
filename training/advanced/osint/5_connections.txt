@@ -1,0 +1,12 @@
+Star really likes to emphasize the importance of Opsec.
+As an example, she told you to take a look at the Reddit account 'quantumcat78'.
+Based on his posts, can you tell his real name?
+
+Flag format : CDDC2025{   }
+ - All lowercase
+ - Replace space with _ (underscore)
+
+> https://www.reddit.com/user/quantumcat78/comments/1g8gck6/for_any_developers_out_there_looking_to_connect/
+> https://github.com/johanmint/johanmint
+
+Flag: CDDC2025{johan_minkowski}

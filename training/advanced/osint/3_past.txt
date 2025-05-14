@@ -1,0 +1,13 @@
+Star is teaching you how to go back in time, but not physically.
+If you go to allgames.com, you can see that its tagline is "Talking about video games and...".
+Can you see what was its tagline on 1 January 2005?
+
+Flag format : CDDC2025{   }
+ - All lowercase, no punctuations
+ - Replace space with _ (underscore)
+ - e.g. CDDC2025{talking_about_video_games_and_the_people_that_play_them_since_1996}
+
+> Use wayback machine to find the site
+> https://web.archive.org/web/20050101003649/http://www.allgames.com/
+
+Flag: CDDC2025{its_not_just_talk_about_games_its_what_gamers_are_talking_about}

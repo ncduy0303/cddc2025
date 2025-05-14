@@ -1,0 +1,14 @@
+Heads up, Brainhackers!
+Let's brush up your OSINT skills so that our mission is successful.
+
+The site cia.gov released a pdf document on 30 July 2012 about Bulgaria.
+What is the subject of the document?
+
+Flag format : CDDC2025{   }
+ - All lowercase
+ - Replace space with _ (underscore)
+
+> Search site:cia.gov filetype:pdf Bulgaria "30 July 2012" on Google
+> https://www.cia.gov/readingroom/docs/CIA-RDP83-00415R012700120008-9.pdf
+
+Flag: CDDC2025{the_bulgarian_air_force}

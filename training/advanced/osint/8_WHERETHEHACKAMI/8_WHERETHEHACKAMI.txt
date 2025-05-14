@@ -1,0 +1,24 @@
+Challenge: WHERETHEHACKAMI
+WHERE did I travel in sequence?
+first(UPPER) + second(lower) + third(lower)
+
+Can you figure out where I traveled — in the correct order?
+Your answer should be the names of three locations I visited:
+- The first airportname ALL UPPERCASE
+- The second country all lowercase
+- The third school all lowercase
+Concatenate them all together (no spaces or symbols).
+
+Riddle Image
+airportname+country+school
+
+Submit
+Download Packet
+
+> Use Google Image Search to find the image of the plane and the lecture hall
+> 
+> https://abpic.co.uk/pictures/registration/D-ALAA: Munich - Franz Josef Strauss (MUC / EDDM), Germany
+> https://m.ekn.kr/view.php?key=20230421010005559: Korea University
+> Answer: NARITAgermanykoreauniversity
+
+Flag: CDDC2025{H0wd1dy0uKn0wwwh3r3iWAS}
