@@ -1,0 +1,5 @@
+http://52.76.13.43:8138/
+
+> Just write a script to go to each site from "/page/1" to "/page/102" and combine the letters from each page
+
+Flag: CDDC2025{Well_done_collecting_everything}

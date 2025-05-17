@@ -1,0 +1,7 @@
+http://52.76.13.43:8137/
+
+> Go to the path /robots.txt which shows:
+User-agent: * Allow: / Disallow: /20041703007178440570148307553336
+> Then just go to the path /20041703007178440570148307553336 which reveals the flag
+
+Flag: CDDC2025{You_can_find_the_page_that_the_administrator_wants_to_hide}

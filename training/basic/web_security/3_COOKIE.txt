@@ -1,0 +1,5 @@
+http://52.76.13.43:8139/
+
+> Just go to the website, click the link, then check the cookies in the browser
+
+Flag: CDDC2025{A_VERY_DELICIOUS_COOKIE}

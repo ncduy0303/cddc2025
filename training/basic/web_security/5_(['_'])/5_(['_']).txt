@@ -1,0 +1,15 @@
+http://52.76.13.43:8136/
+
+> Google Search to get this website: https://jamtg.github.io/aaencode-and-aadecode/
+> Use the decode feature to decode the JavaScript code into:
+
+```javascript
+      const input = document.getElementById("secretInput").value;
+      if (input === "correctpassword") {
+        alert("CDDC2025{Who_the_hell_made_this..}");
+      } else {
+        alert("Incorrect value. Try again.");
+      }
+```
+
+Flag: CDDC2025{Who_the_hell_made_this..}
