@@ -1,0 +1,9 @@
+Star begins the lesson by testing your knowledge about how digital files work.
+She gave you an image file.
+
+"First and foremost, can you look what's inside the chest?"
+
+> Just upload the image to aperisolve.com
+> There is hidden image file extracted using foremost.
+
+Flag: CDDC2025{file_inside_file}

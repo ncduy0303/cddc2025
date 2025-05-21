@@ -1,0 +1,48 @@
+Challenge: Uandme
+Riddle: What comes once in a minute, twice in a moment, but never in a thousand years?
+
+> Decompile the binary using Ghidra
+void decrypt_key(int param_1,int param_2)
+{
+  int local_8;
+  
+  for (local_8 = 0; local_8 < param_2; local_8 = local_8 + 1) {
+    *(char *)(param_1 + local_8) = *(char *)(param_1 + local_8) + -3;
+  }
+  return;
+}
+undefined4 main(void)
+
+{
+  size_t sVar1;
+  int iVar2;
+  undefined4 local_3e;
+  undefined4 local_3a;
+  undefined4 local_36;
+  undefined2 local_32;
+  char local_30 [32];
+  undefined *local_10;
+  
+  local_10 = &stack0x00000004;
+  local_3e = 0x6879726f;
+  local_3a = 0x36657c66;
+  local_36 = 0x71787375;
+  local_32 = 0x6e;
+  sVar1 = strlen((char *)&local_3e);
+  decrypt_key(&local_3e,sVar1);
+  printf("Enter key: ");
+  fgets(local_30,0x20,_stdin);
+  sVar1 = strcspn(local_30,"\n");
+  local_30[sVar1] = '\0';
+  iVar2 = strcmp(local_30,(char *)&local_3e);
+  if (iVar2 == 0) {
+    puts("Congrats! Submit this value on the challenge site");
+  }
+  else {
+    puts("Incorrect key!");
+  }
+  return 0;
+}
+> Password: lovecyb3rpunk
+
+Flag: CDDC2025{cyberPUNNNKK3yb0000ard}

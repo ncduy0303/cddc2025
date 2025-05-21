@@ -1,0 +1,63 @@
+http://52.76.13.43:8119/
+
+Challenge: 1sth1sWh4t
+Riddle: I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?
+
+> Decompile the binary with Ghidra
+bool check_key(char *param_1)
+
+{
+  int iVar1;
+  
+  iVar1 = strcmp(param_1,"ECCHHHOO00secret");
+  return iVar1 == 0;
+}
+
+undefined4 main(void)
+
+{
+  size_t sVar1;
+  int iVar2;
+  char local_30 [32];
+  undefined *local_10;
+  
+  local_10 = &stack0x00000004;
+  printf("Enter the correct key: ");
+  fgets(local_30,0x20,_stdin);
+  sVar1 = strcspn(local_30,"\n");
+  local_30[sVar1] = '\0';
+  iVar2 = check_key(local_30);
+  if (iVar2 == 0) {
+    puts("Try again!");
+  }
+  else {
+    puts("Congrats! Submit this value on the challenge site");
+  }
+  return 0;
+}
+undefined4 main(void)
+
+{
+  size_t sVar1;
+  int iVar2;
+  char local_30 [32];
+  undefined *local_10;
+  
+  local_10 = &stack0x00000004;
+  printf("Enter the secret key: ");
+  fgets(local_30,0x20,_stdin);
+  sVar1 = strcspn(local_30,"\n");
+  local_30[sVar1] = '\0';
+  iVar2 = strcmp(local_30,"F00OO0oTSt33Ap");
+  if (iVar2 == 0) {
+    puts("Congrats! Submit this value on the challenge site");
+  }
+  else {
+    puts("Wrong key!");
+  }
+  return 0;
+}
+
+> Password: ECCHHHOO00secretF00OO0oTSt33Ap
+
+Flag: CDDC2025{whatisthEEEECCCHH0echo}

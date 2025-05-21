@@ -1,0 +1,64 @@
+http://52.76.13.43:8115/
+
+Challenge: Wolfs
+Riddle: I move in packs, howl at night, and vanish in the trees. What am I?
+
+> Decompile the binary with Ghidra
+undefined4 validate(char *param_1)
+
+{
+  size_t sVar1;
+  undefined4 uVar2;
+  int local_30 [8];
+  int local_10;
+  
+  local_30[0] = 0x57;
+  local_30[1] = 0x68;
+  local_30[2] = 0x6c;
+  local_30[3] = 0x77;
+  local_30[4] = 0x60;
+  local_30[5] = 99;
+  local_30[6] = 0x7a;
+  local_30[7] = 0x79;
+  sVar1 = strlen(param_1);
+  if (sVar1 == 8) {
+    for (local_10 = 0; local_10 < 8; local_10 = local_10 + 1) {
+      if (((int)param_1[local_10] ^ local_10 + 3U) + 1 != local_30[local_10]) {
+        return 0;
+      }
+    }
+    uVar2 = 1;
+  }
+  else {
+    uVar2 = 0;
+  }
+  return uVar2;
+}
+
+undefined4 main(void)
+
+{
+  size_t sVar1;
+  int iVar2;
+  char local_50 [64];
+  undefined *local_10;
+  
+  local_10 = &stack0x00000004;
+  puts("Wolves speak not in words, but in twisted logic.");
+  printf("What do they say? ");
+  fgets(local_50,0x40,_stdin);
+  sVar1 = strcspn(local_50,"\n");
+  local_50[sVar1] = '\0';
+  iVar2 = validate(local_50);
+  if (iVar2 == 0) {
+    puts("Nope. You misheard the pack.");
+  }
+  else {
+    puts("Congrats! Submit this value on the challenge site");
+  }
+  return 0;
+}
+
+> Password: UcnpXjpr
+
+Flag: CDDC2025{howlingUcnpXjpr}

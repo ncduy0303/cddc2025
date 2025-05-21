@@ -1,0 +1,54 @@
+http://52.76.13.43:8114/
+
+Challenge: BEAR1 + BEAR2
+the BEAR says: I am strong, yet I sleep through storms. My hunger stirs when the cold is gone. Who am I?
+
+> Decompile the binary with Binary Ninja
+> BEAR1
+int32_t decrypt(void* arg1)
+{
+    int32_t var_8 = 0;
+    char result;
+    
+    while (true)
+    {
+        result = *(arg1 + var_8);
+        
+        if (!result)
+            break;
+        
+        *(arg1 + var_8) ^= 0x5a;
+        var_8 += 1;
+    }
+    
+    return result;
+}
+int32_t main()
+{
+    void* const __return_addr_1 = __return_addr;
+    void arg_4;
+    void* var_10 = &arg_4;
+    int32_t var_5e;
+    __builtin_strncpy(&var_5e, "*56;", 4);
+    int32_t var_5a = 0x1b1f1828;
+    int32_t var_56 = 0x686a6808;
+    int16_t var_52 = 0x6f;
+    decrypt(&var_5e);
+    printf("Enter the key: ");
+    char buf[0x40];
+    fgets(&buf, 0x40, *stdin);
+    buf[strcspn(&buf, U"\n")] = 0;
+    
+    if (strcmp(&buf, &var_5e))
+        puts("Try again!");
+    else
+        puts("Congrats! Submit this value on t…");
+    
+    return 0;
+}
+
+> BEAR2
+
+> Password:
+
+Flag: 

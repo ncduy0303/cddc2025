@@ -1,0 +1,7 @@
+Cypher hid a flag inside the Excel file!
+Find the flag!
+
+> tar -xf excel_hidden_flag.xlsx
+> Check the comment in sharedStrings.xml
+
+Flag: CDDC2025{3xcEl_H1dden_fl4g}

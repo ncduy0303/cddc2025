@@ -1,0 +1,10 @@
+A part of registry file has been converted to a text file.
+I hear that a startup program is configured.
+Do you mind looking for it?
+
+Type the name of the file without the file extension.
+e.g.) \\path\\path2\\Hello_World.exe → CDDC2025{Hello_World}
+
+> Look for [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+
+Flag: CDDC2025{W3ll_d0n3_Y0u_F0un[)_17}

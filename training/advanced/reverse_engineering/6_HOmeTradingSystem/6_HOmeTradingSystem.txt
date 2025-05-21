@@ -1,0 +1,16 @@
+http://52.76.13.43:8112/
+
+Answer format : 
+- Use the long name
+- Use lowercase
+- No space
+
+Riddle answer : commonlanguagespecification
+
+HTS
+Many languages, yet I stand as one,
+A rule for all, uniting the run.
+For .NET I make things right,
+What am I, shining bright?
+
+> Decompile the binary with Ghidra

@@ -1,0 +1,52 @@
+http://52.76.13.43:8118/
+
+Challenge: wh015your1ST
+Riddle: The more you take, the more you leave behind. What am I?
+
+> Decompile the binary using Ghidra
+void obfuscate_key(int param_1)
+
+{
+  int local_8;
+  
+  for (local_8 = 0; *(char *)(param_1 + local_8) != '\0'; local_8 = local_8 + 1) {
+    *(byte *)(param_1 + local_8) = *(byte *)(param_1 + local_8) ^ 0x5a;
+  }
+  return;
+}
+
+undefined4 main(void)
+
+{
+  size_t sVar1;
+  int iVar2;
+  undefined4 local_43;
+  undefined4 local_3f;
+  undefined4 local_3b;
+  undefined4 local_37;
+  undefined4 uStack_33;
+  undefined *local_10;
+  
+  local_10 = &stack0x00000004;
+  local_43 = 0x2933322e;
+  local_3f = 0xc3b2933;
+  local_3b = 0x2a171b1b;
+  local_37 = 0x18692833;
+  uStack_33 = CONCAT13(uStack_33._3_1_,0x226a);
+  obfuscate_key(&local_43);
+  printf("Enter the passphrase: ");
+  fgets((char *)((int)&uStack_33 + 3),0x20,_stdin);
+  sVar1 = strcspn((char *)((int)&uStack_33 + 3),"\n");
+  *(undefined *)((int)&uStack_33 + sVar1 + 3) = 0;
+  iVar2 = strcmp((char *)((int)&uStack_33 + 3),(char *)&local_43);
+  if (iVar2 == 0) {
+    puts("Congrats! Submit this value on the challenge site");
+  }
+  else {
+    puts("Access Denied!");
+  }
+  return 0;
+}
+> Password: thisisaVAAMpir3B0x
+
+Flag: CDDC2025{helloiamCoffinNotTHEBOX}

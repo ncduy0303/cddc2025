@@ -1,0 +1,13 @@
+A wise man once said...
+"A true gentleman never asks about another man's salary, love life, or browser history."
+So, instead of asking, I need you to peek into THIS history. :P
+
+Flag format : CDDC2025{   }
+
+❯ file History
+History: SQLite 3.x database, last written using SQLite version 3046000, file counter 75, database pages 174, cookie 0x25, schema 4, UTF-8, version-valid-for 75
+> Use https://inloop.github.io/sqlite-viewer/ to view the database
+> SELECT url FROM 'urls' WHERE url LIKE "%cddc%"
+> http://cddc.dstabrainhack.com/?id=12345&user=johndoe&email=johndoe%40email.com&age=25&gender=male&country=US&city=NewYork&zip=10001&phone=123-456-7890&dob=1995-08-15&status=active&balance=1520.75&points=2500&membership=premium&last_login=2025-03-30T14%3A30%3A00Z&referrer=google.com&session_id=abcde12345&cart_id=xyz67890&fl4g=d08df2b8de382d42c60e116368c3ee799e00f286&device=mobile&ip=192.168.1.1&browser=chrome&os=windows&app_version=1.2.3&subscription=true&newsletter=false&timezone=UTC-5&language=en&theme=dark&tracking_id=trk_98765&discount_code=SPRING50
+
+Flag: CDDC2025{d08df2b8de382d42c60e116368c3ee799e00f286}

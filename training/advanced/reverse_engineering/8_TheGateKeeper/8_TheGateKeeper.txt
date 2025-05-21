@@ -1,0 +1,154 @@
+http://52.76.13.43:8113/
+
+Challenge: THE GATE KEEPER
+KERBEROS SAYS: Guarding the gates with three-fold might, I let no soul escape the night. Who am I?
+
+> Decompile the binary with Ghidra
+> KERBEROS
+undefined4 check(int param_1)
+
+{
+  char cVar1;
+  size_t sVar2;
+  uint local_10;
+  
+  local_10 = 0;
+  while( true ) {
+    sVar2 = strlen("sorebreKmynameis");
+    if (sVar2 <= local_10) {
+      return 1;
+    }
+    cVar1 = *(char *)(param_1 + local_10);
+    sVar2 = strlen("sorebreKmynameis");
+    if (cVar1 != *(char *)((int)&_IO_stdin_used + (sVar2 - local_10) + 3)) break;
+    local_10 = local_10 + 1;
+  }
+  return 0;
+}
+undefined4 main(void)
+
+{
+  size_t sVar1;
+  int iVar2;
+  char local_30 [32];
+  undefined *local_10;
+  
+  local_10 = &stack0x00000004;
+  printf("Guardian of the Underworld awaits.\nEnter code: ");
+  fgets(local_30,0x20,_stdin);
+  sVar1 = strcspn(local_30,"\n");
+  local_30[sVar1] = '\0';
+  iVar2 = check(local_30);
+  if (iVar2 == 0) {
+    puts("You shall not pass.");
+  }
+  else {
+    puts("Congrats! Submit this value on the challenge site");
+  }
+  return 0;
+}
+
+> KERBEROS2
+void decrypt_key(int param_1,int param_2)
+
+{
+  undefined uVar1;
+  int local_c;
+  int local_8;
+  
+  for (local_8 = 0; local_8 < param_2; local_8 = local_8 + 1) {
+    *(byte *)(param_1 + local_8) = ~*(byte *)(param_1 + local_8) & 0x7f;
+  }
+  for (local_c = 0; local_c < param_2 / 2; local_c = local_c + 1) {
+    uVar1 = *(undefined *)(param_1 + local_c);
+    *(undefined *)(param_1 + local_c) = *(undefined *)(param_1 + (param_2 - local_c) + -1);
+    *(undefined *)((param_2 - local_c) + -1 + param_1) = uVar1;
+  }
+  return;
+}
+undefined4 main(void)
+
+{
+  size_t sVar1;
+  int iVar2;
+  undefined4 local_3f;
+  undefined4 local_3b;
+  undefined4 uStack_37;
+  size_t local_14;
+  undefined *local_10;
+  
+  local_10 = &stack0x00000004;
+  local_3f = 0x4d4f4d4a;
+  local_3b = 0x3a3d2d3a;
+  uStack_37 = CONCAT13(uStack_37._3_1_,0x5e34);
+  local_14 = strlen((char *)&local_3f);
+  decrypt_key(&local_3f,local_14);
+  printf("Enter the Kerberos key: ");
+  fgets((char *)((int)&uStack_37 + 3),0x20,_stdin);
+  sVar1 = strcspn((char *)((int)&uStack_37 + 3),"\n");
+  *(undefined *)((int)&uStack_37 + sVar1 + 3) = 0;
+  iVar2 = strcmp((char *)((int)&uStack_37 + 3),(char *)&local_3f);
+  if (iVar2 == 0) {
+    puts("Congrats! Submit this value on the challenge site");
+  }
+  else {
+    puts("Invalid Kerberos key.");
+  }
+  return 0;
+}
+
+> KERBEROS3
+void twist(int param_1,int param_2)
+
+{
+  undefined uVar1;
+  int local_c;
+  int local_8;
+  
+  for (local_8 = 0; local_8 < param_2; local_8 = local_8 + 1) {
+    *(byte *)(param_1 + local_8) = (*(byte *)(param_1 + local_8) ^ 0x3c) - 5;
+  }
+  for (local_c = 0; local_c < param_2 / 2; local_c = local_c + 1) {
+    uVar1 = *(undefined *)(param_1 + local_c);
+    *(undefined *)(param_1 + local_c) = *(undefined *)(param_1 + (param_2 - local_c) + -1);
+    *(undefined *)((param_2 - local_c) + -1 + param_1) = uVar1;
+  }
+  return;
+}
+undefined4 main(void)
+
+{
+  size_t sVar1;
+  int iVar2;
+  undefined4 local_62;
+  undefined4 local_5e;
+  undefined4 local_5a;
+  undefined2 local_56;
+  char local_54 [64];
+  size_t local_14;
+  undefined *local_10;
+  
+  local_10 = &stack0x00000004;
+  local_62 = 0x59495472;
+  local_5e = 0x4a4e4954;
+  local_5a = 0x656e6b5e;
+  local_56 = 0x74;
+  local_14 = strlen((char *)&local_62);
+  twist(&local_62,local_14);
+  printf("Twist the key and reveal the beast.\nEnter twisted code: ");
+  fgets(local_54,0x40,_stdin);
+  sVar1 = strcspn(local_54,"\n");
+  local_54[sVar1] = '\0';
+  iVar2 = strcmp(local_54,(char *)&local_62);
+  if (iVar2 == 0) {
+    puts("Congrats! Submit this value on the challenge site");
+  }
+  else {
+    puts("Nope. Keep twisting.");
+  }
+  return 0;
+}
+
+> Password: siemanymKerberos!KEBRE2025CTMR]qmpc`pcI
+
+Flag: CDDC2025{CTMR]qmpc`pcISKerberos_LOVE}

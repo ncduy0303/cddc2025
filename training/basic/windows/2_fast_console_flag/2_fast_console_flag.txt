@@ -1,0 +1,3 @@
+Run the file and check the flag that prints on the console.
+It goes super fast, so you will have to be even faster!
+

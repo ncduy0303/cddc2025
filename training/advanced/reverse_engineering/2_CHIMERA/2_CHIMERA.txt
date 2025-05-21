@@ -1,0 +1,56 @@
+http://52.76.13.43:8116/
+
+> Decompile the binary using Ghidra
+
+/* WARNING: Function: __x86.get_pc_thunk.bx replaced with injection: get_pc_thunk_bx */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+undefined4 main(void)
+
+{
+  size_t sVar1;
+  char local_54 [4];
+  char local_50;
+  char local_4f;
+  char local_4e;
+  char local_4d;
+  char local_4c;
+  char local_4b;
+  char local_4a;
+  char local_49;
+  char local_48;
+  uint local_14;
+  undefined *local_10;
+  
+  local_10 = &stack0x00000004;
+  puts("Half-lion, half-goat, with a snake tail...");
+  printf("What\'s the password?\n> ");
+  fgets(local_54,0x40,_stdin);
+  sVar1 = strcspn(local_54,"\n");
+  local_54[sVar1] = '\0';
+  sVar1 = strlen(local_54);
+  printf("DEBUG: length = %lu\n",sVar1);
+  local_14 = 0;
+  while( true ) {
+    sVar1 = strlen(local_54);
+    if (sVar1 <= local_14) break;
+    printf("buf[%d] = \'%c\' (%d)\n",local_14,(int)local_54[local_14],(int)local_54[local_14]);
+    local_14 = local_14 + 1;
+  }
+  sVar1 = strlen(local_54);
+  if (((((sVar1 == 0xd) && (local_54[0] == 'C')) && (local_54[1] == 'h')) &&
+      ((((local_54[2] == '!' && (local_54[3] == 'm')) &&
+        ((local_50 == '3' && ((local_4f == 'r' && (local_4e == 'A')))))) && (local_4d == '_')))) &&
+     ((((local_4c == '2' && (local_4b == 'o')) && (local_4a == '2')) &&
+      ((local_49 == '5' && (local_48 == '!')))))) {
+    puts("Congrats! Submit this value on the challenge site");
+  }
+  else {
+    puts("Wrong password.");
+  }
+  return 0;
+}
+> Password: Ch!m3rA_2o25!
+
+
+Flag: CDDC2025{ChiMeraisaMother}
